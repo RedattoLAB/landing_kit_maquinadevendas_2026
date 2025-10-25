@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kit Máquina de Vendas Imobiliárias 2026 | RedattoLAB</title>
-    <meta name="description" content="Sistema completo de marketing digital para corretores. 15 prompts de IA + ferramentas interativas + templates profissionais. R$ 481 de valor por apenas R$ 47.">
+    <meta name="description" content="Sistema completo de marketing digital para corretores. 15 prompts de IA + ferramentas interativas + templates profissionais. Turma estrategista: 30 vagas.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +31,6 @@
             font-weight: 700;
         }
         
-        /* Animated Background */
         .animated-bg {
             position: fixed;
             width: 100%;
@@ -72,7 +71,6 @@
             z-index: 1;
         }
         
-        /* Top Bar com Urgência */
         .top-urgency-bar {
             background: linear-gradient(135deg, #daa520 0%, #b8860b 100%);
             color: #000000;
@@ -93,17 +91,6 @@
             to { transform: translateY(0); opacity: 1; }
         }
         
-        .top-urgency-bar span {
-            display: inline-block;
-            animation: pulse-text 2s ease-in-out infinite;
-        }
-        
-        @keyframes pulse-text {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-        
-        /* Hero Section */
         .hero {
             background: linear-gradient(135deg, rgba(8,77,110,0.4) 0%, rgba(0,0,0,0.6) 100%);
             padding: 80px 20px 100px;
@@ -123,18 +110,6 @@
             top: -300px;
             right: -200px;
             animation: float 10s ease-in-out infinite;
-        }
-        
-        .hero::after {
-            content: '';
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(8,77,110,0.3) 0%, transparent 70%);
-            border-radius: 50%;
-            bottom: -250px;
-            left: -150px;
-            animation: float 12s ease-in-out infinite reverse;
         }
         
         @keyframes float {
@@ -176,21 +151,6 @@
                 box-shadow: 0 0 40px rgba(218,165,32,1);
                 transform: scale(1.02);
             }
-        }
-        
-        .countdown-container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(218,165,32,0.3), transparent);
-            animation: shine 3s infinite;
-        }
-        
-        @keyframes shine {
-            to { left: 100%; }
         }
         
         .countdown-text {
@@ -235,7 +195,7 @@
         }
         
         .hero h1 {
-            font-size: 62px;
+            font-size: 56px;
             line-height: 1.1;
             margin-bottom: 30px;
             font-weight: 900;
@@ -247,7 +207,6 @@
             position: relative;
             z-index: 2;
             animation: fadeInUp 0.8s ease-out;
-            text-shadow: 0 5px 30px rgba(218,165,32,0.3);
         }
         
         @keyframes fadeInUp {
@@ -256,7 +215,7 @@
         }
         
         .hero .subtitle {
-            font-size: 22px;
+            font-size: 20px;
             margin-bottom: 25px;
             font-weight: 600;
             color: #ffffff;
@@ -269,7 +228,6 @@
             margin-right: auto;
         }
         
-        /* Mockup Hero com efeito 3D */
         .hero-mockup-container {
             margin: 50px auto;
             max-width: 450px;
@@ -285,8 +243,7 @@
             background: #ffffff;
             border: 5px solid #daa520;
             box-shadow: 0 30px 80px rgba(0,0,0,0.9), 
-                        0 0 60px rgba(218,165,32,0.6),
-                        inset 0 0 30px rgba(218,165,32,0.1);
+                        0 0 60px rgba(218,165,32,0.6);
             transform: rotateY(-5deg) rotateX(5deg);
             transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
             animation: levitate 4s ease-in-out infinite;
@@ -303,91 +260,6 @@
             50% { transform: rotateY(-5deg) rotateX(5deg) translateY(-15px); }
         }
         
-        /* Placeholder para capa */
-        .cover-placeholder {
-            width: 100%;
-            height: 500px;
-            background: linear-gradient(135deg, #084d6e 0%, #000000 100%);
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 18px;
-            color: #daa520;
-            font-weight: 700;
-            text-align: center;
-            padding: 20px;
-            border: 3px dashed #daa520;
-        }
-        
-        /* Stats com animação */
-        .stats {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin: 60px 0;
-            flex-wrap: wrap;
-            position: relative;
-            z-index: 2;
-        }
-        
-        .stat-item {
-            background: rgba(8,77,110,0.7);
-            padding: 30px 40px;
-            border-radius: 20px;
-            backdrop-filter: blur(15px);
-            border: 2px solid rgba(218,165,32,0.5);
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-        }
-        
-        .stat-item::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(218,165,32,0.3), transparent);
-            transition: left 0.6s;
-        }
-        
-        .stat-item:hover::before {
-            left: 100%;
-        }
-        
-        .stat-item:hover {
-            transform: translateY(-15px) scale(1.05);
-            border-color: #daa520;
-            background: rgba(8,77,110,0.95);
-            box-shadow: 0 25px 60px rgba(218,165,32,0.5);
-        }
-        
-        .stat-number {
-            font-size: 52px;
-            font-weight: 900;
-            color: #daa520;
-            font-family: 'Urbanist', sans-serif;
-            display: block;
-            text-shadow: 0 0 30px rgba(218,165,32,0.8);
-            animation: countUp 2s ease-out;
-        }
-        
-        @keyframes countUp {
-            from { opacity: 0; transform: scale(0.5); }
-            to { opacity: 1; transform: scale(1); }
-        }
-        
-        .stat-label {
-            font-size: 14px;
-            color: #ffffff;
-            font-weight: 600;
-            margin-top: 8px;
-        }
-        
-        /* CTA Button Premium */
         .cta-button {
             display: inline-block;
             background: linear-gradient(135deg, #daa520 0%, #b8860b 100%);
@@ -428,11 +300,6 @@
             background: linear-gradient(135deg, #ffcc33 0%, #daa520 100%);
         }
         
-        .cta-button:active {
-            transform: translateY(-5px) scale(1.02);
-        }
-        
-        /* Badges de segurança */
         .security-badges {
             margin-top: 25px;
             color: #daa520;
@@ -463,60 +330,14 @@
             transform: scale(1.05);
         }
         
-        /* Social Proof Dinâmico */
-        .social-proof-bar {
-            background: linear-gradient(135deg, rgba(218,165,32,0.2) 0%, rgba(218,165,32,0.3) 100%);
-            color: #daa520;
-            font-size: 15px;
-            font-weight: 700;
-            padding: 15px 25px;
-            border-radius: 10px;
-            margin: 30px auto 0 auto;
-            max-width: 600px;
-            display: inline-block;
-            border: 2px solid rgba(218,165,32,0.5);
-            box-shadow: 0 0 30px rgba(218,165,32,0.3);
-            animation: slideInUp 0.8s ease-out;
-            backdrop-filter: blur(10px);
-        }
-        
-        @keyframes slideInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        /* Problema Section com visual impactante */
-        .problem {
-            padding: 120px 20px;
-            background: rgba(0,0,0,0.7);
-            position: relative;
-        }
-        
-        .problem::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 100%;
-            background: linear-gradient(180deg, transparent 0%, rgba(218,165,32,0.05) 50%, transparent 100%);
-            pointer-events: none;
-        }
-        
         .section-title {
-            font-size: 52px;
+            font-size: 48px;
             text-align: center;
-            margin-bottom: 70px;
+            margin-bottom: 60px;
             font-weight: 900;
             font-family: 'Urbanist', sans-serif;
             color: #daa520;
             position: relative;
-            animation: fadeInDown 0.8s ease-out;
-        }
-        
-        @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-30px); }
-            to { opacity: 1; transform: translateY(0); }
         }
         
         .section-title::after {
@@ -528,960 +349,377 @@
             margin: 20px auto 0;
             border-radius: 2px;
         }
-        
+
+        .testimonials-section {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, rgba(8,77,110,0.3) 0%, rgba(0,0,0,0.7) 100%);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto 40px auto;
+        }
+
+        .testimonial-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .testimonial-card {
+            background: linear-gradient(135deg, rgba(8,77,110,0.6) 0%, rgba(0,0,0,0.9) 100%);
+            border: 2px solid rgba(218,165,32,0.3);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            height: 380px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            border-color: #daa520;
+            box-shadow: 0 20px 60px rgba(218,165,32,0.4);
+        }
+
+        .testimonial-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        .whatsapp-identity {
+            text-align: center;
+            margin-top: 15px;
+            padding: 15px 20px;
+            background: rgba(8,77,110,0.5);
+            border-radius: 12px;
+            border: 1px solid rgba(218,165,32,0.3);
+            transition: all 0.3s;
+        }
+
+        .whatsapp-identity:hover {
+            background: rgba(8,77,110,0.7);
+            border-color: rgba(218,165,32,0.5);
+        }
+
+        .whatsapp-identity-name {
+            font-size: 16px;
+            font-weight: 700;
+            color: #daa520;
+            margin-bottom: 5px;
+        }
+
+        .whatsapp-identity-info {
+            font-size: 13px;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 8px;
+        }
+
+        .whatsapp-verified {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(37,211,102,0.2);
+            color: #25d366;
+            padding: 5px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 700;
+            border: 1px solid rgba(37,211,102,0.3);
+        }
+
+        .problem-section {
+            padding: 80px 20px;
+            background: rgba(0,0,0,0.6);
+        }
+
         .problem-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 35px;
-            margin-bottom: 60px;
-        }
-        
-        .problem-card {
-            background: linear-gradient(135deg, #084d6e 0%, #000000 100%);
-            padding: 40px;
-            border-radius: 25px;
-            border: 2px solid rgba(218,165,32,0.3);
-            position: relative;
-            overflow: hidden;
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
-        }
-        
-        .problem-card::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(218,165,32,0.1) 0%, transparent 70%);
-            opacity: 0;
-            transition: opacity 0.5s;
-        }
-        
-        .problem-card:hover::before {
-            opacity: 1;
-            animation: rotate 10s linear infinite;
-        }
-        
-        @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-        
-        .problem-card:hover {
-            transform: translateY(-15px) scale(1.02);
-            border-color: #daa520;
-            box-shadow: 0 30px 70px rgba(218,165,32,0.4);
-        }
-        
-        .problem-card h3 {
-            font-size: 24px;
-            margin-bottom: 18px;
-            color: #daa520;
-            font-weight: 700;
-            font-family: 'Urbanist', sans-serif;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .problem-card p {
-            color: #ffffff;
-            line-height: 1.8;
-            font-size: 16px;
-            position: relative;
-            z-index: 1;
-        }
-        
-        /* Solução Highlight com efeito WOW */
-        .solution-highlight {
-            background: linear-gradient(135deg, rgba(218,165,32,0.2) 0%, rgba(8,77,110,0.3) 100%);
-            padding: 60px;
-            border-radius: 30px;
-            text-align: center;
-            margin-top: 70px;
-            border: 3px solid #daa520;
-            backdrop-filter: blur(15px);
-            box-shadow: 0 30px 80px rgba(218,165,32,0.4);
-            position: relative;
-            overflow: hidden;
-            animation: slideInUp 1s ease-out;
-        }
-        
-        .solution-highlight::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(218,165,32,0.2), transparent);
-            animation: shine 4s infinite;
-        }
-        
-        .solution-highlight h3 {
-            font-size: 36px;
-            color: #daa520;
-            margin-bottom: 25px;
-            font-weight: 900;
-            font-family: 'Urbanist', sans-serif;
-            text-shadow: 0 0 30px rgba(218,165,32,0.6);
-        }
-        
-        .solution-highlight p {
-            font-size: 20px;
-            color: #ffffff;
-            line-height: 1.9;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        
-        /* Value Stack Section */
-        .value-stack {
-            padding: 120px 20px;
-            background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(8,77,110,0.6) 100%);
-        }
-        
-        .value-stack-container {
-            background: linear-gradient(135deg, rgba(8,77,110,0.95) 0%, rgba(0,0,0,0.95) 100%);
-            border-radius: 35px;
-            padding: 70px;
-            border: 4px solid #daa520;
-            max-width: 1100px;
-            margin: 0 auto;
-            box-shadow: 0 40px 100px rgba(0,0,0,0.8);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .value-stack-container::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -50%;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle, rgba(218,165,32,0.15) 0%, transparent 70%);
-            animation: rotate 25s linear infinite;
-        }
-        
-        /* Produto Principal */
-        .main-product {
-            background: linear-gradient(135deg, #084d6e 0%, #000000 100%);
-            padding: 50px;
-            border-radius: 25px;
-            border: 3px solid #daa520;
+            gap: 30px;
             margin-bottom: 50px;
-            box-shadow: 0 25px 70px rgba(218,165,32,0.4);
-            position: relative;
-            z-index: 1;
+        }
+
+        .problem-card {
+            background: linear-gradient(135deg, rgba(8,77,110,0.7) 0%, rgba(0,0,0,0.8) 100%);
+            padding: 40px;
+            border-radius: 20px;
+            border: 2px solid rgba(218,165,32,0.4);
             transition: all 0.5s;
         }
-        
-        .main-product:hover {
-            transform: scale(1.02);
-            box-shadow: 0 35px 90px rgba(218,165,32,0.6);
+
+        .problem-card:hover {
+            transform: translateY(-10px);
+            border-color: #daa520;
+            box-shadow: 0 20px 60px rgba(218,165,32,0.4);
         }
-        
-        .main-product h3 {
-            font-size: 34px;
+
+        .problem-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
             color: #daa520;
-            margin-bottom: 25px;
-            font-family: 'Urbanist', sans-serif;
-            font-weight: 900;
         }
-        
-        .main-product p {
-            color: #ffffff;
-            font-size: 18px;
-            line-height: 1.9;
-            margin-bottom: 25px;
-        }
-        
-        .main-product ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .main-product li {
-            padding: 15px 0;
-            color: #ffffff;
-            font-size: 17px;
-            border-bottom: 1px solid rgba(218,165,32,0.2);
-            transition: all 0.3s;
-        }
-        
-        .main-product li:hover {
-            padding-left: 15px;
-            border-bottom-color: #daa520;
-        }
-        
-        .main-product li:before {
-            content: "✓";
-            color: #daa520;
-            font-weight: bold;
-            font-size: 20px;
-            margin-right: 15px;
-        }
-        
-        /* Bônus Section */
-        .bonus-section-title {
+
+        .authority-section {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, rgba(218,165,32,0.15) 0%, rgba(8,77,110,0.2) 100%);
             text-align: center;
-            color: #daa520;
-            font-size: 38px;
-            margin: 60px 0 40px 0;
-            font-family: 'Urbanist', sans-serif;
-            font-weight: 900;
-            position: relative;
-            z-index: 1;
-            animation: fadeInUp 0.8s ease-out;
         }
-        
-        .bonus-grid {
+
+        .authority-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+           grid-template-columns: repeat(2, 1fr);
             gap: 30px;
-            margin-top: 40px;
-            position: relative;
-            z-index: 1;
+            max-width: 1000px;
+            margin: 0 auto;
         }
-        
-        .bonus-card {
-            background: rgba(0,0,0,0.7);
-            padding: 35px;
+
+        .authority-card {
+            background: rgba(8,77,110,0.7);
+            padding: 30px;
+            border-radius: 20px;
+            border: 2px solid rgba(218,165,32,0.4);
+            transition: all 0.5s;
+        }
+
+        .authority-card:hover {
+            transform: translateY(-10px);
+            border-color: #daa520;
+            box-shadow: 0 20px 60px rgba(218,165,32,0.4);
+        }
+
+        .authority-number {
+            font-size: 48px;
+            font-weight: 900;
+            color: #daa520;
+            font-family: 'Urbanist', sans-serif;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .value-stack-section {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, rgba(8,77,110,0.5) 0%, rgba(0,0,0,0.8) 100%);
+        }
+
+        .value-list {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(8,77,110,0.3);
+            padding: 50px;
             border-radius: 25px;
             border: 2px solid rgba(218,165,32,0.4);
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .value-list ul {
+            list-style: none;
+            margin-top: 25px;
+        }
+
+        .value-list ul li {
+            padding: 15px 0 15px 40px;
             position: relative;
-            overflow: hidden;
-            backdrop-filter: blur(10px);
-        }
-        
-        .bonus-card::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 5px;
-            height: 100%;
-            background: linear-gradient(180deg, #daa520 0%, #b8860b 100%);
-            transition: width 0.5s;
-        }
-        
-        .bonus-card:hover::after {
-            width: 100%;
-            opacity: 0.1;
-        }
-        
-        .bonus-card:hover {
-            transform: translateY(-10px) translateX(10px);
-            border-color: #daa520;
-            box-shadow: 0 25px 60px rgba(218,165,32,0.5);
-            background: rgba(0,0,0,0.9);
-        }
-        
-        .bonus-badge {
-            display: inline-block;
-            background: linear-gradient(135deg, #daa520 0%, #b8860b 100%);
-            color: #000000;
-            padding: 8px 18px;
-            border-radius: 25px;
-            font-size: 12px;
-            font-weight: 900;
-            margin-bottom: 18px;
-            letter-spacing: 0.5px;
-            box-shadow: 0 5px 15px rgba(218,165,32,0.4);
-        }
-        
-        .bonus-card h4 {
-            color: #daa520;
-            font-size: 22px;
-            margin-bottom: 18px;
-            font-family: 'Urbanist', sans-serif;
-            font-weight: 700;
-        }
-        
-        .bonus-card p {
             color: #ffffff;
-            font-size: 16px;
-            line-height: 1.7;
+            font-size: 18px;
+            line-height: 1.6;
         }
-        
-        /* Ferramentas Interativas - DESTAQUE ESPECIAL */
-        .interactive-tools {
-            background: linear-gradient(135deg, #daa520 0%, #b8860b 100%);
+
+        .value-list ul li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #daa520;
+            font-weight: 900;
+            font-size: 28px;
+        }
+
+        .price-section {
+            background: linear-gradient(135deg, rgba(218,165,32,0.15) 0%, rgba(8,77,110,0.2) 100%);
             padding: 60px;
             border-radius: 30px;
-            margin: 60px 0;
-            border: 4px solid #daa520;
-            box-shadow: 0 40px 100px rgba(218,165,32,0.7);
-            position: relative;
-            z-index: 1;
-            overflow: hidden;
-            animation: slideInUp 1s ease-out;
-        }
-        
-        .interactive-tools::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(0,0,0,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
-            opacity: 0.3;
-        }
-        
-        .interactive-tools h3 {
-            font-size: 40px;
-            color: #000000;
-            text-align: center;
-            margin-bottom: 50px;
-            font-family: 'Urbanist', sans-serif;
-            font-weight: 900;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .tools-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 35px;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .tool-card {
-            background: rgba(0,0,0,0.9);
-            padding: 40px;
-            border-radius: 25px;
-            border: 3px solid #000000;
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .tool-card::before {
-            content: '';
-            position: absolute;
-            top: -100%;
-            left: -100%;
-            width: 300%;
-            height: 300%;
-            background: radial-gradient(circle, rgba(218,165,32,0.3) 0%, transparent 70%);
-            opacity: 0;
-            transition: all 0.6s;
-        }
-        
-        .tool-card:hover::before {
-            opacity: 1;
-            top: -50%;
-            left: -50%;
-        }
-        
-        .tool-card:hover {
-            transform: scale(1.05);
-            border-color: #daa520;
-            box-shadow: 0 30px 70px rgba(0,0,0,0.8);
-        }
-        
-        .tool-card h4 {
-            color: #daa520;
-            font-size: 26px;
-            margin-bottom: 18px;
-            font-family: 'Urbanist', sans-serif;
-            font-weight: 700;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .tool-card p {
-            color: #ffffff;
-            font-size: 17px;
-            line-height: 1.8;
-            margin-bottom: 20px;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .tool-card ul {
-            list-style: none;
-            padding: 0;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .tool-card li {
-            color: #ffffff;
-            padding: 12px 0;
-            font-size: 15px;
-            border-bottom: 1px solid rgba(218,165,32,0.2);
-        }
-        
-        .tool-card li:before {
-            content: "✓";
-            color: #daa520;
-            font-weight: bold;
-            font-size: 18px;
-            margin-right: 12px;
-        }
-        
-        .tool-value {
-            margin-top: 25px;
-            padding-top: 20px;
-            border-top: 2px solid #daa520;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .tool-value strong {
-            color: #daa520;
-            font-size: 20px;
-            font-family: 'Urbanist', sans-serif;
-        }
-        
-        /* Price Section - MAXIMIZAR CONVERSÃO */
-        .price-section {
-            background: linear-gradient(135deg, #000000 0%, #084d6e 100%);
-            padding: 70px;
-            border-radius: 30px;
+            border: 3px solid #daa520;
             text-align: center;
             margin-top: 60px;
-            border: 4px solid #daa520;
-            box-shadow: 0 40px 100px rgba(218,165,32,0.6);
-            position: relative;
-            z-index: 1;
-            overflow: hidden;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
-        
-        .price-section::before {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle at 50% 50%, rgba(218,165,32,0.2) 0%, transparent 70%);
-            animation: pulse 5s ease-in-out infinite;
-        }
-        
+
         .price-section h3 {
             font-size: 36px;
             color: #daa520;
-            margin-bottom: 40px;
-            font-family: 'Urbanist', sans-serif;
-            font-weight: 900;
-            position: relative;
-            z-index: 1;
+            margin-bottom: 30px;
         }
-        
-        .price-breakdown {
-            margin: 35px 0;
-            padding: 40px;
-            background: rgba(218,165,32,0.1);
-            border-radius: 20px;
-            border: 2px solid rgba(218,165,32,0.4);
-            backdrop-filter: blur(10px);
-            position: relative;
-            z-index: 1;
-        }
-        
-        .price-breakdown p {
-            color: #ffffff;
-            font-size: 18px;
-            margin: 12px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 8px 0;
-            border-bottom: 1px solid rgba(218,165,32,0.2);
-        }
-        
-        .price-breakdown p:last-child {
-            border-bottom: none;
-            border-top: 3px solid #daa520;
-            margin-top: 20px;
-            padding-top: 20px;
-            font-size: 24px;
-            font-weight: 900;
-        }
-        
-        .price-breakdown strong {
-            color: #daa520;
-            font-family: 'Urbanist', sans-serif;
-        }
-        
-        .total-value {
-            font-size: 32px;
-            color: #ffffff;
-            text-decoration: line-through;
-            opacity: 0.6;
-            margin: 30px 0 20px 0;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .final-price {
-            font-size: 90px;
-            font-weight: 900;
-            color: #daa520;
-            font-family: 'Urbanist', sans-serif;
-            margin: 20px 0;
-            text-shadow: 0 0 60px rgba(218,165,32,1);
-            position: relative;
-            z-index: 1;
-            animation: price-pulse 2s ease-in-out infinite;
-        }
-        
-        @keyframes price-pulse {
-            0%, 100% { transform: scale(1); text-shadow: 0 0 40px rgba(218,165,32,0.8); }
-            50% { transform: scale(1.05); text-shadow: 0 0 80px rgba(218,165,32,1); }
-        }
-        
-        .installment {
-            font-size: 24px;
-            color: #ffffff;
-            margin-bottom: 40px;
-            position: relative;
-            z-index: 1;
-            font-weight: 600;
-        }
-        
+
         .discount-badge {
-            display: inline-block;
-            background: linear-gradient(135deg, #daa520 0%, #b8860b 100%);
+            background: #daa520;
             color: #000000;
-            padding: 12px 30px;
+            padding: 15px 40px;
             border-radius: 30px;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 900;
-            margin: 20px 0;
-            position: relative;
-            z-index: 1;
-            animation: badge-pulse 2s ease-in-out infinite;
+            display: inline-block;
+            margin: 30px 0;
         }
-        
-        /* Testimonials */
-        .testimonials {
-            padding: 120px 20px;
-            background: rgba(0,0,0,0.5);
+
+        .total-value {
+            font-size: 28px;
+            color: rgba(255,255,255,0.6);
+            text-decoration: line-through;
+            margin-bottom: 10px;
         }
-        
-        .testimonial-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 35px;
-            margin-top: 60px;
-        }
-        
-        .testimonial {
-            background: linear-gradient(135deg, rgba(8,77,110,0.7) 0%, rgba(0,0,0,0.8) 100%);
-            padding: 40px;
-            border-radius: 25px;
-            border: 2px solid rgba(218,165,32,0.4);
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
-            backdrop-filter: blur(10px);
-        }
-        
-        .testimonial::before {
-            content: '"';
-            position: absolute;
-            font-size: 150px;
-            color: rgba(218,165,32,0.15);
-            top: -30px;
-            left: 20px;
-            font-family: Georgia, serif;
-            font-weight: bold;
-        }
-        
-        .testimonial:hover {
-            transform: translateY(-15px) scale(1.03);
-            border-color: #daa520;
-            box-shadow: 0 30px 70px rgba(218,165,32,0.5);
-        }
-        
-        .testimonial-text {
-            font-style: italic;
-            color: #ffffff;
-            margin-bottom: 25px;
-            line-height: 1.9;
-            position: relative;
-            z-index: 1;
-            font-size: 16px;
-        }
-        
-        .testimonial-author {
-            font-weight: 700;
+
+        .final-price {
+            font-size: 72px;
+            font-weight: 900;
             color: #daa520;
-            font-size: 19px;
             font-family: 'Urbanist', sans-serif;
+            margin: 20px 0;
         }
-        
-        .testimonial-role {
-            font-size: 14px;
+
+        .installment {
+            font-size: 20px;
             color: #ffffff;
-            opacity: 0.8;
-            margin-top: 5px;
+            margin-bottom: 30px;
         }
-        
-        /* FAQ */
-        .faq {
-            padding: 120px 20px;
-            background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(8,77,110,0.5) 100%);
+
+        .guarantee-badge {
+            background: rgba(37,211,102,0.2);
+            border: 2px solid rgba(37,211,102,0.5);
+            color: #25d366;
+            padding: 20px 40px;
+            border-radius: 20px;
+            font-size: 18px;
+            font-weight: 700;
+            display: inline-block;
+            margin-top: 30px;
         }
-        
+
+        .faq-section {
+            padding: 80px 20px;
+            background: rgba(0,0,0,0.6);
+        }
+
         .faq-accordion {
             max-width: 900px;
             margin: 0 auto;
         }
-        
+
         .faq-item {
-            background: rgba(8,77,110,0.8);
-            border-radius: 20px;
-            margin-bottom: 25px;
-            border: 2px solid rgba(218,165,32,0.4);
-            overflow: hidden;
-            transition: all 0.4s;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-            backdrop-filter: blur(10px);
+            background: rgba(8,77,110,0.3);
+            border: 2px solid rgba(218,165,32,0.3);
+            border-radius: 15px;
+            margin-bottom: 20px;
+            transition: all 0.3s;
         }
-        
+
         .faq-item:hover {
             border-color: #daa520;
-            box-shadow: 0 15px 50px rgba(218,165,32,0.4);
-            transform: translateX(5px);
         }
-        
+
         .faq-item summary {
-            padding: 30px 35px;
+            padding: 25px 30px;
             font-size: 20px;
             font-weight: 700;
             color: #daa520;
             cursor: pointer;
             list-style: none;
-            font-family: 'Urbanist', sans-serif;
-            position: relative;
-            transition: all 0.3s;
         }
-        
-        .faq-item summary:hover {
-            padding-left: 45px;
-        }
-        
+
         .faq-item summary::-webkit-details-marker {
             display: none;
         }
-        
-        .faq-item summary::after {
-            content: '▼';
-            position: absolute;
-            right: 35px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 18px;
-            transition: transform 0.4s;
-            color: #daa520;
-        }
-        
-        .faq-item[open] summary::after {
-            transform: translateY(-50%) rotate(180deg);
-        }
-        
+
         .faq-answer {
-            padding: 0 35px 30px 35px;
+            padding: 0 30px 25px 30px;
             color: #ffffff;
-            line-height: 1.9;
-            font-size: 17px;
-            animation: fadeIn 0.4s ease-out;
+            line-height: 1.8;
+            font-size: 16px;
         }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        /* Final CTA */
-        .final-cta {
-            padding: 120px 20px;
-            background: linear-gradient(135deg, #084d6e 0%, #000000 100%);
-            text-align: center;
-            border-top: 4px solid #daa520;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .final-cta::before {
-            content: '';
-            position: absolute;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(218,165,32,0.3) 0%, transparent 70%);
-            border-radius: 50%;
-            top: -300px;
-            left: 50%;
-            transform: translateX(-50%);
-            animation: pulse 5s ease-in-out infinite;
-        }
-        
-        .final-cta h2 {
-            font-size: 52px;
-            color: #daa520;
-            margin-bottom: 35px;
-            font-family: 'Urbanist', sans-serif;
-            font-weight: 900;
-            position: relative;
-            z-index: 1;
-            text-shadow: 0 0 40px rgba(218,165,32,0.6);
-        }
-        
-        .final-cta p {
-            font-size: 24px;
-            color: #ffffff;
-            margin-bottom: 50px;
-            line-height: 1.7;
-            position: relative;
-            z-index: 1;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        /* Footer */
+
         footer {
             background: #000000;
-            color: #ffffff;
-            padding: 60px 20px;
+            padding: 60px 20px 30px;
             text-align: center;
-            border-top: 3px solid #084d6e;
+            border-top: 3px solid #daa520;
         }
-        
+
         .footer-logo {
-            max-width: 180px;
-            margin-bottom: 25px;
-            filter: drop-shadow(0 0 20px rgba(218,165,32,0.6));
+            max-width: 200px;
+            margin: 0 auto 20px;
         }
-        
-        footer p {
-            margin: 15px 0;
-            opacity: 0.8;
-        }
-        
+
         .footer-contact {
             display: flex;
             justify-content: center;
-            gap: 35px;
-            margin: 30px 0;
+            gap: 30px;
             flex-wrap: wrap;
+            margin: 30px 0;
         }
-        
+
         .footer-contact a {
             color: #daa520;
             text-decoration: none;
-            transition: all 0.3s;
             font-weight: 700;
-            padding: 10px 20px;
-            border-radius: 20px;
-            border: 1px solid rgba(218,165,32,0.3);
+            transition: all 0.3s;
         }
-        
+
         .footer-contact a:hover {
             color: #ffffff;
-            background: rgba(218,165,32,0.2);
-            border-color: #daa520;
-            transform: translateY(-3px);
         }
-        
-        .legal-links {
-            margin-top: 25px;
-            font-size: 13px;
-        }
-        
-        .legal-links a {
-            color: #ffffff;
-            text-decoration: underline;
-            margin: 0 15px;
-            opacity: 0.7;
-            transition: all 0.3s;
-        }
-        
-        .legal-links a:hover {
-            opacity: 1;
-            color: #daa520;
-        }
-        
-        /* WhatsApp Float */
+
         .whatsapp-float {
             position: fixed;
             bottom: 30px;
             right: 30px;
-            z-index: 1000;
+            z-index: 999;
         }
-        
+
         .whatsapp-float a {
-            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
-            color: #ffffff;
-            width: 65px;
-            height: 65px;
-            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 35px;
+            width: 60px;
+            height: 60px;
+            background: #25d366;
+            border-radius: 50%;
+            font-size: 32px;
             text-decoration: none;
-            box-shadow: 0 8px 25px rgba(37,211,102,0.5);
-            transition: all 0.4s;
-            animation: bounce 2s infinite;
+            box-shadow: 0 10px 30px rgba(37,211,102,0.5);
+            transition: all 0.3s;
+            animation: pulse-whatsapp 2s infinite;
         }
-        
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-        
+
         .whatsapp-float a:hover {
-            transform: scale(1.15);
-            box-shadow: 0 12px 35px rgba(37,211,102,0.7);
+            transform: scale(1.1);
+            box-shadow: 0 15px 40px rgba(37,211,102,0.7);
         }
-        
-        /* Garantia Badge */
-        .guarantee-badge {
-            display: inline-block;
-            background: rgba(218,165,32,0.2);
-            color: #daa520;
-            padding: 15px 30px;
-            border-radius: 30px;
-            font-size: 16px;
-            font-weight: 700;
-            margin-top: 30px;
-            border: 2px solid rgba(218,165,32,0.5);
-            position: relative;
-            z-index: 2;
+
+        @keyframes pulse-whatsapp {
+            0%, 100% { box-shadow: 0 10px 30px rgba(37,211,102,0.5); }
+            50% { box-shadow: 0 10px 50px rgba(37,211,102,0.9); }
         }
-        
-        /* RESPONSIVO MOBILE */
-        @media (max-width: 1024px) {
-            .problem-grid,
-            .bonus-grid,
-            .tools-grid,
-            .testimonial-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .hero h1 {
-                font-size: 42px;
-            }
-            
-            .section-title {
-                font-size: 38px;
-            }
-        }
-        
+
         @media (max-width: 768px) {
-            .hero {
-                padding: 50px 20px 70px;
-            }
-            
             .hero h1 {
                 font-size: 36px;
-                line-height: 1.2;
             }
-            
-            .hero .subtitle {
-                font-size: 18px;
-            }
-            
             .section-title {
                 font-size: 32px;
-                margin-bottom: 40px;
             }
-            
-            .stat-item {
-                padding: 20px 25px;
+            .testimonials-grid {
+                grid-template-columns: 1fr;
             }
-            
-            .stat-number {
-                font-size: 40px;
-            }
-            
-            .cta-button {
-                padding: 22px 45px;
-                font-size: 18px;
-            }
-            
-            .value-stack-container,
-            .price-section,
-            .interactive-tools {
-                padding: 40px 25px;
-            }
-            
-            .main-product {
-                padding: 35px 25px;
-            }
-            
-            .final-price {
-                font-size: 70px;
-            }
-            
-            .problem,
-            .value-stack,
-            .testimonials,
-            .faq,
-            .final-cta {
-                padding: 80px 20px;
-            }
-            
-            .bonus-card,
-            .tool-card,
-            .testimonial {
-                padding: 30px 25px;
-            }
-            
-            .faq-item summary {
-                font-size: 18px;
-                padding: 25px 25px;
-            }
-            
-            .faq-answer {
-                padding: 0 25px 25px 25px;
-                font-size: 16px;
-            }
-            
-            .security-badges {
-                flex-direction: column;
-                gap: 10px;
-            }
-            
-            .countdown-timer {
-                font-size: 28px;
-            }
-            
-            .whatsapp-float a {
-                width: 55px;
-                height: 55px;
-                font-size: 28px;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 28px;
-            }
-            
-            .section-title {
-                font-size: 26px;
-            }
-            
-            .final-price {
-                font-size: 56px;
-            }
-            
-            .stats {
-                gap: 20px;
-            }
-            
-            .countdown-container {
-                max-width: 95%;
+            .testimonial-card {
+                height: 350px;
             }
         }
     </style>
@@ -1490,390 +728,288 @@
     
     <div class="animated-bg"></div>
     
-    <!-- Top Urgency Bar -->
     <div class="top-urgency-bar">
-        <span>🔥 Atenção: Primeiras 50 vagas com bônus exclusivos • Restam apenas <span id="vagas-restantes">37</span> vagas!</span>
+        <span>🔥 Turma Estrategista: Oferta encerra em 48h • Preço sobe para R$ 197 após esse prazo</span>
     </div>
 
-    <!-- Hero Section -->
+    <!-- HERO SECTION -->
     <section class="hero">
         <div class="container">
             <img src="https://redattolab.com.br/wp-content/uploads/2025/09/RedattoLAB-400-x-150-px.png" alt="RedattoLAB" class="logo-hero">
             
             <div class="countdown-container">
-                <span class="countdown-text">⏰ Esta oferta expira em:</span>
-                <span class="countdown-timer" id="countdown">23:47:15</span>
+                <span class="countdown-text">⏰ Oferta da turma estrategista encerra em:</span>
+                <span class="countdown-timer" id="countdown">47:59:00</span>
             </div>
             
-            <div class="badge">🏆 Lançamento exclusivo 2026</div>
+            <div class="badge">🏆 Turma Estrategista 2026 • Bônus Exclusivos</div>
             
-            <h1>Transforme seu marketing digital<br/>em uma Máquina de Vendas</h1>
+            <h1>O método completo para corretores gerarem 15-30 leads qualificados por mês usando IA e estratégias comprovadas</h1>
             
             <p class="subtitle">
-                O sistema completo que corretores de elite usam para gerar leads qualificados em escala,<br/>
-                criar conteúdo profissional em minutos com IA e multiplicar fechamentos
+                Sistema e método testado em +5 países e usado por corretores de elite que faturam mensalmente sem depender só de indicação. 
+                15 prompts profissionais + ferramentas interativas + consultoria 1h inclusa.
             </p>
             
-            <!-- ESPAÇO PARA CAPA DO EBOOK -->
             <div class="hero-mockup-container">
                 <img src="https://redattolab.com.br/wp-content/uploads/2025/10/Modern-Neutral-Digital-Product-Computer-Mockup-Promotional-Instagram-Post-1.png" 
-     alt="Capa Kit Máquina de Vendas 2026" 
-     class="ebook-mockup"
-     width="800"
-     height="1000"
-     loading="lazy">
+                     alt="Kit Máquina de Vendas 2026" 
+                     class="ebook-mockup">
             </div>
             
-            <div class="stats">
-                <div class="stat-item">
-                    <span class="stat-number">R$ 481</span>
-                    <span class="stat-label">Valor Real do Kit</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">90%</span>
-                    <span class="stat-label">Economia Hoje</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">15</span>
-                    <span class="stat-label">Prompts Profissionais</span>
-                </div>
-            </div>
-            
-            <a href="#oferta" class="cta-button">Quero o Kit Completo Agora</a>
+            <a href="#oferta" class="cta-button">Garantir minha vaga agora</a>
             
             <div class="security-badges">
                 <div class="security-badge-item">
-                    <span>🔒</span> Pagamento 100% Seguro
+                    <span>🔒</span> Pagamento 100% seguro
                 </div>
                 <div class="security-badge-item">
-                    <span>🛡️</span> Garantia 7 Dias
+                    <span>🛡️</span> Garantia 7 dias
                 </div>
                 <div class="security-badge-item">
                     <span>⚡</span> Acesso Imediato
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">💬 Conversas reais com corretores</h2>
             
-            <div class="social-proof-bar" id="social-proof">
-                ⭐ <strong>143 corretores</strong> adquiriram nas últimas 48h
+            <div class="testimonials-grid">
+                <div class="testimonial-wrapper">
+                    <div class="testimonial-card">
+                        <img src="https://redattolab.com.br/wp-content/uploads/2025/10/Imagem-do-WhatsApp-de-2025-10-23-as-22.30.49_576336b8.jpg" 
+                             alt="Print conversa WhatsApp 3">
+                    </div>
+                    <div class="whatsapp-identity">
+                        <div class="whatsapp-identity-name">Camila S.</div>
+                        <div class="whatsapp-identity-info">Corretora há 2 anos • Belo Horizonte</div>
+                        <div class="whatsapp-verified">✓✓ Verificado via WhatsApp</div>
+                    </div>
+                </div>
+
+                <!-- PLACEHOLDERS PARA NOVOS PRINTS -->
+                <div class="testimonial-wrapper">
+                    <div class="testimonial-card">
+                        <img src="[INSERIR LINK PRINT 4]" 
+                             alt="Print conversa WhatsApp 4">
+                    </div>
+                    <div class="whatsapp-identity">
+                        <div class="whatsapp-identity-name">[NOME DO CORRETOR]</div>
+                        <div class="whatsapp-identity-info">[Informação do corretor]</div>
+                        <div class="whatsapp-verified">✓✓ Verificado via WhatsApp</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-wrapper">
+                    <div class="testimonial-card">
+                        <img src="[INSERIR LINK PRINT 5]" 
+                             alt="Print conversa WhatsApp 5">
+                    </div>
+                    <div class="whatsapp-identity">
+                        <div class="whatsapp-identity-name">[NOME DO CORRETOR]</div>
+                        <div class="whatsapp-identity-info">[Informação do corretor]</div>
+                        <div class="whatsapp-verified">✓✓ Verificado via WhatsApp</div>
+                    </div>
+                </div>
+
+                
             </div>
         </div>
     </section>
 
-    <!-- Problema Section -->
-    <section class="problem">
+    <!-- PROBLEMA -->
+    <section class="problem-section">
         <div class="container">
-            <h2 class="section-title">❌ Você está perdendo vendas AGORA</h2>
+            <h2 class="section-title">❌ Se você está nessa situação...</h2>
             
             <div class="problem-grid">
                 <div class="problem-card">
-                    <h3>🔍 Invisível no Google</h3>
-                    <p>Seus clientes pesquisam imóveis online e encontram seus concorrentes porque você não aparece nas buscas locais. Enquanto isso, eles fecham as vendas que deveriam ser suas.</p>
+                    <h3>📱 Posts bonitos, inbox vazio</h3>
+                    <p>Você posta 3-4 vezes por semana, mas recebe ZERO mensagens de clientes interessados. Curtidas não pagam conta.</p>
                 </div>
-                
+
                 <div class="problem-card">
-                    <h3>📱 Instagram parado</h3>
-                    <p>Você posta de vez em quando, sem estratégia, enquanto outros corretores criam conteúdo diário que converte seguidores em clientes pagantes.</p>
+                    <h3>🎲 Faturamento instável</h3>
+                    <p>Janeiro: 3 vendas. Ssetembro: 0. Dependendo só de indicação é loteria. Você precisa de previsibilidade.</p>
                 </div>
-                
+
                 <div class="problem-card">
-                    <h3>⏰ Resposta lenta = Lead Perdido</h3>
-                    <p>78% dos clientes contratam quem responde em até 5 minutos. Seus concorrentes têm scripts prontos e você improvisa cada resposta.</p>
+                    <h3>⏰ Sem tempo para criar conteúdo</h3>
+                    <p>Leva 2 horas para escrever uma legenda e gravar um vídeo. Seus concorrentes postam todo dia enquanto você luta contra o tempo.</p>
                 </div>
-                
+
                 <div class="problem-card">
-                    <h3>🎲 Refém da indicação</h3>
-                    <p>Depender só de indicação te deixa vulnerável a meses bons e ruins, sem controle sobre seu faturamento. É hora de gerar seus próprios leads.</p>
+                    <h3>🔍 Invisível no digital</h3>
+                    <p>Aquele corretor que começou depois de você já tem fila de espera. A diferença? Ele domina o jogo que você não conhece.</p>
                 </div>
             </div>
 
-            <div class="solution-highlight">
-                <h3>✅ Existe um método prático e acessível</h3>
-                <p>
-                    Em 2026, os corretores que dominam marketing digital faturam 5x mais trabalhando metade do tempo. 
-                    Este kit completo mostra <strong>exatamente</strong> como fazer parte dos 3% que lideram o mercado imobiliário.
+            <div style="text-align: center; margin-top: 50px; padding: 40px; background: rgba(218,165,32,0.1); border-radius: 20px; border: 2px solid rgba(218,165,32,0.4); max-width: 800px; margin-left: auto; margin-right: auto;">
+                <h3 style="font-size: 28px; color: #daa520; margin-bottom: 20px;">✅ Existe um método testado e acessível</h3>
+                <p style="font-size: 18px; color: #ffffff; line-height: 1.8;">
+                    Em 2026, corretores que dominam marketing digital faturam 5x mais trabalhando metade do tempo. 
+                    Este kit mostra exatamente como fazer parte desse grupo.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Value Stack Section -->
-    <section class="value-stack" id="oferta">
+    <!-- SOBRE A REDATTOLAB -->
+    <section class="authority-section">
         <div class="container">
-            <h2 class="section-title">🎁 O que você recebe no kit completo</h2>
+            <h2 class="section-title">🏢 Quem está por trás deste método</h2>
             
-            <div class="value-stack-container">
+            <div style="max-width: 1100px; margin: 0 auto;">
                 
-                <!-- Produto principal -->
-                <div class="main-product">
-                    <h3>📘 E-book principal: Tendências de Marketing Digital 2026</h3>
-                    <p><strong>25 páginas densas</strong> com as estratégias mais atualizadas de marketing digital para corretores imobiliários. Descubra o que funciona AGORA em 2026, não teorias ultrapassadas.</p>
-                    <ul>
-                        <li>Estratégias de conteúdo para Instagram, TikTok e YouTube Shorts que geram leads</li>
-                        <li>Como usar IA para criar conteúdo 10x mais rápido (e melhor) que seus concorrentes</li>
-                        <li>Funis de vendas automatizados que convertem leads frios em clientes quentes</li>
-                        <li>Métricas que realmente importam e como acompanhá-las sem perder tempo</li>
-                        <li>Estratégias de anúncios pagos com ROI comprovado (leads qualificados por menos de R$ 5)</li>
-                    </ul>
-                </div>
-
-                <h3 class="bonus-section-title">
-                    🎁 Bônus inclusos (Você NÃO paga nada extra)
-                </h3>
-
-                <!-- Grid de Bônus -->
-                <div class="bonus-grid">
-                    <div class="bonus-card">
-                        <span class="bonus-badge">BÔNUS #1 • R$ 97</span>
-                        <h4>🤖 Kit Corretor Digital 2026</h4>
-                        <p><strong>51 páginas com 15 prompts profissionais de IA</strong> prontos para usar. Copie, cole e gere descrições de imóveis magnéticas, posts para redes sociais e roteiros de vídeo em minutos.</p>
+                <!-- Grid de Resultados -->
+                <div class="authority-grid" style="margin-bottom: 50px;">
+                    <div class="authority-card">
+                        <span class="authority-number">12+</span>
+                        <p style="color: #ffffff; font-size: 16px;">anos atuando com marketing digital para imobiliárias de médio e grande porte</p>
                     </div>
 
-                    <div class="bonus-card">
-                        <span class="bonus-badge">BÔNUS #2 • R$ 27</span>
-                        <h4>💎 Guia Prompts Secretos</h4>
-                        <p>2 prompts de elite que corretores top usam: <strong>Gerador de Ideias Infinito</strong> (9 ideias em 2 min) + <strong>Analisador de Performance</strong> com insights acionáveis.</p>
+                    <div class="authority-card">
+                        <span class="authority-number">8</span>
+                        <p style="color: #ffffff; font-size: 16px;">países atendidos (Brasil, Uruguai, Argentina, Chile, Colômbia, Peru, Panamá e México) com estratégias adaptadas</p>
                     </div>
 
-                    <div class="bonus-card">
-                        <span class="bonus-badge">Bônus #3 • R$ 27</span>
-                        <h4>✉️ 3 Templates de E-mail de Alta Conversão</h4>
-                        <p>Taxa de abertura de até 71%. Scripts prontos para follow-up pós-visita, reativação de lead frio e última chamada com urgência. Basta personalizar e enviar.</p>
+                    <div class="authority-card">
+                        <span class="authority-number">2</span>
+                        <p style="color: #ffffff; font-size: 16px;">imóveis vendidos em 36 dias para imobiliária no Uruguai usando apenas tráfego pago</p>
                     </div>
 
-                    <div class="bonus-card">
-                        <span class="bonus-badge">Bônus #4 • R$ 37</span>
-                        <h4>💬 5 Scripts de WhatsApp que convertem</h4>
-                        <p><strong>98% taxa de abertura e 45-60% de resposta.</strong> Scripts testados para cada fase do funil: primeiro contato, qualificação, agendamento, pós-visita e fechamento.</p>
-                    </div>
-
-                    <div class="bonus-card">
-                        <span class="bonus-badge">Bônus #5 • R$ 47</span>
-                        <h4>🛠️ Toolkit Premium</h4>
-                        <p>Checklists de implementação, templates editáveis no Canva, lista com 15+ ferramentas de IA testadas, CRM simplificado para gestão de leads e trackers de métricas.</p>
-                    </div>
-
-                    <div class="bonus-card">
-                        <span class="bonus-badge">Bônus #6 • R$ 47</span>
-                        <h4>🎓 Guia rápido de IA para corretores</h4>
-                        <p><strong>6 páginas de guia prático.</strong> Aprenda a usar as principais ferramentas de IA gratuitas para criar conteúdo profissional. Passo a passo simplificado, direto ao ponto.</p>
+                    <div class="authority-card">
+                        <span class="authority-number">11.8k</span>
+                        <p style="color: #ffffff; font-size: 16px;">seguidores gerados para corretor em 4 meses (partiu de 1.200) com estratégia combinada SEO/SEM</p>
                     </div>
                 </div>
 
-                <!-- Ferramentas Interativas - DESTAQUE ESPECIAL -->
-                <div class="interactive-tools">
-                    <h3>🔥 Ferramentas interativas exclusivas</h3>
-                    
-                    <div class="tools-grid">
-                        <div class="tool-card">
-                            <h4>📊 Simulador de funil de vendas</h4>
-                            <p>Ferramenta interativa profissional que calcula seu funil completo, identifica gargalos, gera gráficos e permite exportar tudo em PDF para apresentar para clientes ou sócios.</p>
-                            <ul>
-                                <li>Calcule conversões em cada etapa do funil</li>
-                                <li>Identifique exatamente onde está perdendo leads</li>
-                                <li>Gere relatórios profissionais em PDF</li>
-                                <li>Planeje metas realistas baseadas em dados</li>
-                            </ul>
-                            <div class="tool-value">
-                                <strong>Valor individual: R$ 97</strong>
-                            </div>
-                        </div>
-
-                        <div class="tool-card">
-                            <h4>👥 Grupo VIP Máquina de Vendas</h4>
-                            <p>Comunidade exclusiva no WhatsApp com corretores de alto desempenho. Troque experiências, receba dicas semanais e tenha suporte direto da equipe RedattoLAB.</p>
-                            <ul>
-                                <li>Networking com corretores top performers</li>
-                                <li>Estratégias e cases de sucesso semanais</li>
-                                <li>Suporte direto para dúvidas</li>
-                                <li>Acesso vitalício ao grupo</li>
-                            </ul>
-                            <div class="tool-value">
-                                <strong>Valor mensal: R$ 47/mês</strong>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Quem Criou -->
+                <div style="background: linear-gradient(135deg, rgba(8,77,110,0.6) 0%, rgba(0,0,0,0.9) 100%); padding: 45px; border-radius: 20px; border: 2px solid rgba(218,165,32,0.4); margin-bottom: 30px;">
+                    <h3 style="color: #daa520; font-size: 26px; margin-bottom: 20px;">👤 Estrategista-Líder</h3>
+                    <p style="color: #ffffff; font-size: 17px; line-height: 1.8;">
+                        Especialista com <strong style="color: #daa520;">12 anos de experiência</strong> em marketing digital em território brasileiro e hispano-americano. 
+                        Atuou <strong style="color: #daa520;">5 anos em unicórnio proptech brasileira</strong> produzindo conteúdo para os blogs de 5 mercados,
+                        Colômbia, Panamá, Peru, Argentina e Chile. Desenvolveu o <strong style="color: #daa520;">Método DACE</strong> 
+                        e o <strong style="color: #daa520;">Sistema SNAP</strong> de gerenciamento de leads, ambos proprietários e focados 
+                        em conversão para o mercado imobiliário.
+                    </p>
                 </div>
 
-                <!-- Price Section -->
-                <div class="price-section">
-                    <div class="countdown-container" style="max-width: 90%; margin-bottom: 30px;">
-                        <span class="countdown-text">⏰ Falta pouco! Este preço exclusivo termina em:</span>
-                        <span class="countdown-timer" id="countdown-price">23:47:15</span>
-                    </div>
-
-                    <h3>💰 Investimento total do kit completo</h3>
-
-                    <div class="price-breakdown">
-                        <p><span>E-book principal (25 páginas)</span> <strong>R$ 47</strong></p>
-                        <p><span>E-book 15 prompts (51 páginas)</span> <strong>R$ 97</strong></p>
-                        <p><span>Guia prompts secretos</span> <strong>R$ 27</strong></p>
-                        <p><span>3 Templates de e-mail</span> <strong>R$ 27</strong></p>
-                        <p><span>5 Scripts de WhatsApp</span> <strong>R$ 37</strong></p>
-                        <p><span>Toolkit Premium</span> <strong>R$ 47</strong></p>
-                        <p><span>Guia rápido de IA</span> <strong>R$ 47</strong></p>
-                        <p><span>Simulador de funil</span> <strong>R$ 97</strong></p>
-                        <p><span>Grupo VIP </span> <strong>R$ 47</strong></p>
-                        <p style="border-top: 3px solid #daa520; margin-top: 20px; padding-top: 20px; font-size: 26px;">
-                            <span>Valor total real:</span> <strong>R$ 481</strong>
+                <!-- Sobre a Agência -->
+                <div style="background: linear-gradient(135deg, rgba(8,77,110,0.6) 0%, rgba(0,0,0,0.9) 100%); padding: 45px; border-radius: 20px; border: 2px solid rgba(218,165,32,0.4);">
+                    <h3 style="color: #daa520; font-size: 26px; margin-bottom: 20px;">🌎 RedattoLAB • Equipe Internacional</h3>
+                    <p style="color: #ffffff; font-size: 17px; line-height: 1.8; margin-bottom: 20px;">
+                        Nasce da vontade de entregar resultados palpáveis, baseados em valores inegociáveis como transparência, honestidade e cultura data-driven. Trabalhamos exclusivamente com <strong style="color: #daa520;">especialistas plenos e seniores</strong> 
+                        com mais de 3 anos de atuação em marketing digital. Equipe internacional com profissionais do Brasil 
+                        e países da América Hispânica.
+                    </p>
+                    <p style="color: #ffffff; font-size: 17px; line-height: 1.8; margin-bottom: 25px;">
+                        <strong style="color: #daa520;">Por que equipe local?</strong> Acreditamos que know-how nos mercados atendidos 
+                        é muito mais eficiente do que "achar que funciona lá". Trabalhamos com profissionais que vivem e respiram 
+                        a realidade de cada país, garantindo estratégias totalmente adaptadas aos mercados locais.
+                    </p>
+                    <div style="background: rgba(218,165,32,0.1); padding: 25px; border-radius: 15px; border-left: 4px solid #daa520;">
+                        <p style="color: #daa520; font-weight: 700; font-size: 18px; margin-bottom: 10px;">🎯 Foco total em conversão</p>
+                        <p style="color: #ffffff; font-size: 16px; line-height: 1.7;">
+                            Utilizamos exclusivamente o <strong>Método DACE</strong> (metodologia proprietária de análise e otimização de campanhas) 
+                            e o <strong>Sistema SNAP</strong> (sistema de gerenciamento de leads que maximiza o aproveitamento do budget de midia) para garantir resultados acima da média 
+                            e previsíveis em todos os projetos.
                         </p>
                     </div>
-
-                    <div class="discount-badge">
-                        🎯 Desconto de 90% aplicado
-                    </div>
-
-                    <div class="total-value">De R$ 481,00</div>
-                    <div class="final-price">R$ 47</div>
-                    <div class="installment">ou 3x de R$ 17,90 sem juros</div>
-
-                    <a href="#checkout" class="cta-button">Garantir minha vaga agora</a>
-
-                    <div class="security-badges" style="margin-top: 25px;">
-                        <div class="security-badge-item">
-                            <span>🔒</span> Ambiente 100% seguro
-                        </div>
-                        <div class="security-badge-item">
-                            <span>🛡️</span> Garantia de 7 dias
-                        </div>
-                        <div class="security-badge-item">
-                            <span>⚡</span> Acesso imediato
-                        </div>
-                    </div>
-
-                    <div class="guarantee-badge">
-                        🛡️ Garantia incondicional de 7 dias • Risco zero
-                    </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Preview do Conteúdo -->
-    <section style="padding: 120px 20px; background: linear-gradient(135deg, rgba(8,77,110,0.8) 0%, rgba(0,0,0,0.6) 100%);">
+    <!-- O QUE VEM NO KIT -->
+    <section class="value-stack-section" id="oferta">
         <div class="container">
-            <h2 class="section-title">👀 Espiadinha no conteúdo</h2>
-            <p style="text-align: center; font-size: 20px; color: #ffffff; margin-bottom: 60px; max-width: 800px; margin-left: auto; margin-right: auto;">
-                Veja a qualidade do material que você vai receber. Estas são páginas reais dos e-books.
-            </p>
-
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-bottom: 60px;">
-                <!-- Espaço para imagens das páginas internas -->
-                <div style="text-align: center;">
-                    <img src="https://redattolab.com.br/wp-content/uploads/2025/10/Captura-de-tela-2025-10-18-232636.png" 
-     alt="Capa Kit Máquina de Vendas 2026" 
-     class="ebook-mockup"
-     width="800"
-     height="1000"
-     loading="lazy">
-                    <p style="color: #daa520; font-weight: 700; margin-top: 20px; font-size: 16px;">Estratégias de conteúdo 2026</p>
-                </div>
-
-                <div style="text-align: center;">
-                    <img src="https://redattolab.com.br/wp-content/uploads/2025/10/Captura-de-tela-2025-10-23-132403.png" 
-     alt="Capa Kit Máquina de Vendas 2026" 
-     class="ebook-mockup"
-     width="800"
-     height="1000"
-     loading="lazy">
-                    <p style="color: #daa520; font-weight: 700; margin-top: 20px; font-size: 16px;">Prompts prontos para usar</p>
-                </div>
-
-                <div style="text-align: center;">
-                    <img src="https://redattolab.com.br/wp-content/uploads/2025/10/Captura-de-tela-2025-10-23-132238.png" 
-     alt="Capa Kit Máquina de Vendas 2026" 
-     class="ebook-mockup"
-     width="800"
-     height="1000"
-     loading="lazy">
-                    <p style="color: #daa520; font-weight: 700; margin-top: 20px; font-size: 16px;">Scripts e templates</p>
-                </div>
+            <h2 class="section-title">📦 O que você recebe no kit completo</h2>
+            
+            <div class="value-list">
+                <h3 style="font-size: 28px; color: #daa520; margin-bottom: 20px;">Sistema completo de marketing digital para corretores:</h3>
+                
+                <ul>
+                    <li><strong>E-book Tendências 2026 (25 páginas):</strong> Estratégias atualizadas de conteúdo para Instagram, TikTok e YouTube Shorts que geram leads</li>
+                    
+                    <li><strong>Kit Corretor Digital 2026 (51 páginas com 15 prompts):</strong> Prompts profissionais de IA prontos para copiar e colar. Gere descrições de imóveis, posts e roteiros em minutos. Explicações, dicas de uso, dicas do que evitar, horários e muito mais!</li>
+                    
+                    <li><strong>Guia Prompts Secretos:</strong> 2 prompts de elite - Gerador de Ideias Infinito (9 ideias em 2 min) + Analisador de Performance com insights acionáveis</li>
+                    
+                    <li><strong>3 Templates de E-mail de Alta Conversão:</strong> Scripts com até 71% de taxa de abertura para follow-up, reativação de lead frio e última chamada</li>
+                    
+                    <li><strong>5 Scripts de WhatsApp:</strong> 98% taxa de abertura e 45-60% de resposta. Para cada fase do funil: primeiro contato, qualificação, agendamento, pós-visita e fechamento</li>
+                    
+                    <li><strong>Toolkit Premium:</strong> Checklists de implementação, templates Canva editáveis, lista com 15+ ferramentas de IA testadas, CRM simplificado e trackers de métricas</li>
+                    
+                    <li><strong>Guia Rápido de IA (6 páginas):</strong> Passo a passo simplificado para usar as principais ferramentas de IA gratuitas e criar conteúdo profissional</li>
+                    
+                    <li><strong>Simulador de Funil de Vendas Interativo:</strong> Ferramenta profissional que calcula conversões, identifica gargalos, gera gráficos e exporta relatórios em PDF</li>
+                    
+                    <li><strong>Grupo VIP Máquina de Vendas:</strong> Comunidade exclusiva no WhatsApp com suporte direto, estratégias semanais e networking com corretores de alto desempenho</li>
+                </ul>
             </div>
 
-            <!-- Mockup 3D do E-book Principal -->
-            <div style="text-align: center; margin-top: 80px;">
-                <h3 style="font-size: 32px; color: #daa520; margin-bottom: 40px; font-family: 'Urbanist', sans-serif; font-weight: 700;">
-                    📚 E-book principal completo
-                </h3>
-                <div style="max-width: 500px; margin: 0 auto;">
-                    <div class="cover-placeholder" style="height: 500px;">
-                        <img src="https://redattolab.com.br/wp-content/uploads/2025/09/Design-sem-nome-8.jpg" 
-     alt="Capa Kit Máquina de Vendas 2026" 
-     class="ebook-mockup"
-     width="800"
-     height="1000"
-     loading="lazy">
-                    </div>
+            <!-- BÔNUS TURMA ESTRATEGISTA -->
+            <div style="background: linear-gradient(135deg, rgba(218,165,32,0.2) 0%, rgba(8,77,110,0.3) 100%); padding: 50px; border-radius: 25px; border: 3px solid #daa520; margin-top: 60px; text-align: center;">
+                <div style="background: #daa520; color: #000000; padding: 12px 30px; border-radius: 20px; font-size: 16px; font-weight: 900; display: inline-block; margin-bottom: 25px;">
+                    🎁 BÔNUS EXCLUSIVO ESTA TURMA
                 </div>
-                <p style="color: #ffffff; font-size: 18px; margin-top: 30px; max-width: 700px; margin-left: auto; margin-right: auto;">
-                    25 páginas densas com estratégias atualizadas, exemplos reais e planos de ação práticos. 
-                    Zero enrolação, 100% aplicável.
+                <h3 style="font-size: 32px; color: #daa520; margin-bottom: 20px;">Consultoria de 1 hora com especialista</h3>
+                <p style="font-size: 20px; color: #ffffff; line-height: 1.8; max-width: 700px; margin: 0 auto;">
+                    Análise personalizada da sua estratégia atual + plano de ação customizado para seu mercado. 
+                    <strong style="color: #daa520;">Valor individual: R$ 497</strong>
+                </p>
+                <p style="font-size: 16px; color: rgba(255,255,255,0.8); margin-top: 20px;">
+                    (Disponível apenas durante esta oferta de 48h)
                 </p>
             </div>
 
-            <div style="text-align: center; margin-top: 60px;">
-                <a href="#oferta" class="cta-button">Quero acesso completo agora</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Social Proof Alternativo (sem depoimentos específicos) -->
-    <section style="padding: 100px 20px; background: rgba(0,0,0,0.5);">
-        <div class="container">
-            <h2 class="section-title">🎯 Por que corretores escolhem RedattoLAB</h2>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 35px; margin-top: 60px;">
-                <div style="background: linear-gradient(135deg, rgba(8,77,110,0.7) 0%, rgba(0,0,0,0.8) 100%); padding: 40px; border-radius: 25px; border: 2px solid rgba(218,165,32,0.4); text-align: center; transition: all 0.5s;" onmouseover="this.style.borderColor='#daa520'; this.style.transform='translateY(-10px)'" onmouseout="this.style.borderColor='rgba(218,165,32,0.4)'; this.style.transform='translateY(0)'">
-                    <div style="font-size: 48px; margin-bottom: 20px;">📊</div>
-                    <h3 style="color: #daa520; font-size: 22px; margin-bottom: 15px; font-family: 'Urbanist', sans-serif; font-weight: 700;">Conteúdo atualizado 2026</h3>
-                    <p style="color: #ffffff; line-height: 1.8;">Estratégias que funcionam AGORA, não teorias ultrapassadas de 2020.</p>
+            <!-- PREÇO -->
+            <div class="price-section">
+                <h3>💰 Investimento turma estrategista</h3>
+                
+                <div class="discount-badge">
+                    🔥 80% de desconto aplicado
                 </div>
 
-                <div style="background: linear-gradient(135deg, rgba(8,77,110,0.7) 0%, rgba(0,0,0,0.8) 100%); padding: 40px; border-radius: 25px; border: 2px solid rgba(218,165,32,0.4); text-align: center; transition: all 0.5s;" onmouseover="this.style.borderColor='#daa520'; this.style.transform='translateY(-10px)'" onmouseout="this.style.borderColor='rgba(218,165,32,0.4)'; this.style.transform='translateY(0)'">
-                    <div style="font-size: 48px; margin-bottom: 20px;">⚡</div>
-                    <h3 style="color: #daa520; font-size: 22px; margin-bottom: 15px; font-family: 'Urbanist', sans-serif; font-weight: 700;">Resultados imediatos</h3>
-                    <p style="color: #ffffff; line-height: 1.8;">Prompts e templates prontos. Copie, personalize e use hoje mesmo.</p>
+                <div class="total-value">De R$ 481,00</div>
+                <div class="final-price">R$ 97</div>
+                <div class="installment">ou 3x de R$ 32,33 sem juros</div>
+
+                <a href="[INSERIR LINK CHECKOUT HOTMART]" class="cta-button" style="margin-top: 30px;">Garantir minha vaga agora</a>
+
+                <div class="security-badges" style="margin-top: 25px; justify-content: center;">
+                    <div class="security-badge-item">
+                        <span>🔒</span> Ambiente 100% seguro
+                    </div>
+                    <div class="security-badge-item">
+                        <span>🛡️</span> Garantia de 7 dias
+                    </div>
+                    <div class="security-badge-item">
+                        <span>⚡</span> Acesso imediato
+                    </div>
                 </div>
 
-                <div style="background: linear-gradient(135deg, rgba(8,77,110,0.7) 0%, rgba(0,0,0,0.8) 100%); padding: 40px; border-radius: 25px; border: 2px solid rgba(218,165,32,0.4); text-align: center; transition: all 0.5s;" onmouseover="this.style.borderColor='#daa520'; this.style.transform='translateY(-10px)'" onmouseout="this.style.borderColor='rgba(218,165,32,0.4)'; this.style.transform='translateY(0)'">
-                    <div style="font-size: 48px; margin-bottom: 20px;">🎓</div>
-                    <h3 style="color: #daa520; font-size: 22px; margin-bottom: 15px; font-family: 'Urbanist', sans-serif; font-weight: 700;">Suporte especializado</h3>
-                    <p style="color: #ffffff; line-height: 1.8;">Grupo VIP exclusivo com suporte direto da equipe RedattoLAB.</p>
+                <div class="guarantee-badge">
+                    🛡️ Garantia incondicional de 7 dias • Risco zero
                 </div>
 
-                <div style="background: linear-gradient(135deg, rgba(8,77,110,0.7) 0%, rgba(0,0,0,0.8) 100%); padding: 40px; border-radius: 25px; border: 2px solid rgba(218,165,32,0.4); text-align: center; transition: all 0.5s;" onmouseover="this.style.borderColor='#daa520'; this.style.transform='translateY(-10px)'" onmouseout="this.style.borderColor='rgba(218,165,32,0.4)'; this.style.transform='translateY(0)'">
-                    <div style="font-size: 48px; margin-bottom: 20px;">🛡️</div>
-                    <h3 style="color: #daa520; font-size: 22px; margin-bottom: 15px; font-family: 'Urbanist', sans-serif; font-weight: 700;">Garantia sem risco</h3>
-                    <p style="color: #ffffff; line-height: 1.8;">7 dias para testar. Não gostou? Devolvemos 100% do valor.</p>
-                </div>
-
-                <div style="background: linear-gradient(135deg, rgba(8,77,110,0.7) 0%, rgba(0,0,0,0.8) 100%); padding: 40px; border-radius: 25px; border: 2px solid rgba(218,165,32,0.4); text-align: center; transition: all 0.5s;" onmouseover="this.style.borderColor='#daa520'; this.style.transform='translateY(-10px)'" onmouseout="this.style.borderColor='rgba(218,165,32,0.4)'; this.style.transform='translateY(0)'">
-                    <div style="font-size: 48px; margin-bottom: 20px;">💰</div>
-                    <h3 style="color: #daa520; font-size: 22px; margin-bottom: 15px; font-family: 'Urbanist', sans-serif; font-weight: 700;">Investimento acessível</h3>
-                    <p style="color: #ffffff; line-height: 1.8;">R$ 481 de valor por apenas R$ 47. Menos que 2 almoços.</p>
-                </div>
-
-                <div style="background: linear-gradient(135deg, rgba(8,77,110,0.7) 0%, rgba(0,0,0,0.8) 100%); padding: 40px; border-radius: 25px; border: 2px solid rgba(218,165,32,0.4); text-align: center; transition: all 0.5s;" onmouseover="this.style.borderColor='#daa520'; this.style.transform='translateY(-10px)'" onmouseout="this.style.borderColor='rgba(218,165,32,0.4)'; this.style.transform='translateY(0)'">
-                    <div style="font-size: 48px; margin-bottom: 20px;">🚀</div>
-                    <h3 style="color: #daa520; font-size: 22px; margin-bottom: 15px; font-family: 'Urbanist', sans-serif; font-weight: 700;">Ferramentas interativas</h3>
-                    <p style="color: #ffffff; line-height: 1.8;">Simulador de funil profissional que gera relatórios em PDF.</p>
-                </div>
-            </div>
-
-            <!-- Mockup do Kit Completo -->
-            <div style="text-align: center; margin-top: 80px; max-width: 450px; margin-left: auto; margin-right: auto;">
-                <div class="cover-placeholder" style="height: 400px;">
-                    <img src="https://redattolab.com.br/wp-content/uploads/2025/10/Modern-Neutral-Digital-Product-Computer-Mockup-Promotional-Instagram-Post-1.png" 
-     alt="Capa Kit Máquina de Vendas 2026" 
-     class="ebook-mockup"
-     width="800"
-     height="1000"
-     loading="lazy">
+                <p style="font-size: 14px; color: rgba(255,255,255,0.7); margin-top: 30px;">
+                    Após 48h, preço sobe para R$ 197 e bônus da consultoria é removido
+                </p>
             </div>
         </div>
     </section>
 
     <!-- FAQ -->
-    <section class="faq">
+    <section class="faq-section">
         <div class="container">
             <h2 class="section-title">❓ Perguntas frequentes</h2>
             
@@ -1881,78 +1017,69 @@
                 <details class="faq-item">
                     <summary>Não tenho tempo para postar todo dia. Isso vai funcionar pra mim?</summary>
                     <div class="faq-answer">
-                        <p>Sim! O guia mostra como fazer tudo em 1 hora por semana usando IA e agendamento. Você cria conteúdo em lote (batch) e automatiza a publicação. Os prompts são feitos justamente para quem não tem tempo a perder.</p>
+                        <p>Sim! O método mostra como criar conteúdo em lote usando IA. Você dedica 1 hora por semana e agenda tudo. Os prompts são feitos para quem não tem tempo a perder.</p>
                     </div>
                 </details>
                 
                 <details class="faq-item">
-                    <summary>Não entendo nada de marketing digital. O conteúdo é técnico demais?</summary>
+                    <summary>Não entendo nada de marketing digital. É muito técnico?</summary>
                     <div class="faq-answer">
-                        <p>Não. Linguagem simples, passo a passo, sem termos técnicos complicados. Feito para quem nunca mexeu com marketing antes. Se você sabe usar WhatsApp, consegue aplicar tudo que está no kit.</p>
+                        <p>Não. Linguagem simples, passo a passo, sem jargões complicados. Se você sabe usar WhatsApp, consegue aplicar tudo que está no kit.</p>
                     </div>
                 </details>
                 
                 <details class="faq-item">
-                    <summary>Já tentei marketing digital e não deu certo. Por que seria diferente agora?</summary>
+                    <summary>Já tentei marketing digital e não funcionou. Por que seria diferente?</summary>
                     <div class="faq-answer">
-                        <p>Provavelmente faltou método. Você não precisa de "mais conteúdo", precisa de estratégia comprovada. Este material mostra o caminho completo testado por centenas de corretores com resultados concretos documentados.</p>
+                        <p>Provavelmente faltou método. Este kit mostra o caminho completo testado em 5 países e usado por profissionais do ramo imobiliário. Não é teoria, é aplicação prática.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Preciso aparecer na câmera ou criar reels o tempo todo?</summary>
+                    <div class="faq-answer">
+                        <p>Não necessariamente. O kit ensina estratégias de conteúdo com e sem aparecer. Existem formatos que geram ótimos resultados sem você precisar gravar vídeos.</p>
                     </div>
                 </details>
                 
                 <details class="faq-item">
                     <summary>Como funciona a garantia?</summary>
                     <div class="faq-answer">
-                        <p>7 dias incondicional. Se por qualquer motivo não agregar valor ao seu negócio, basta enviar um email e devolvemos 100% do seu investimento. Sem perguntas, sem burocracia, sem complicação.</p>
-                    </div>
-                </details>
-                
-                <details class="faq-item">
-                    <summary>Preciso investir em anúncios pagos?</summary>
-                    <div class="faq-answer">
-                        <p>Não obrigatoriamente. O kit ensina estratégias orgânicas que funcionam sem gastar nada. Os anúncios são para quem quer escalar mais rápido. Muitos corretores geram leads qualificados por menos de R$5,00/lead investindo apenas R$300-500/mês.</p>
+                        <p>7 dias incondicional. Se não agregar valor ao seu negócio, basta enviar um email e devolvemos 100% do investimento. Sem perguntas, sem burocracia.</p>
                     </div>
                 </details>
                 
                 <details class="faq-item">
                     <summary>Recebo o material na hora?</summary>
                     <div class="faq-answer">
-                        <p>Sim! Assim que o pagamento for confirmado (em até 5 minutos), você recebe por email: todos os e-books em PDF, bônus, templates, acesso ao grupo VIP e link para o simulador de funil. Acesso 100% imediato.</p>
-                    </div>
-                </details>
-
-                <details class="faq-item">
-                    <summary>Funciona para corretores iniciantes ou só para quem já vende muito?</summary>
-                    <div class="faq-answer">
-                        <p>Funciona para ambos! Se você está começando, o kit te dá o mapa completo para não perder tempo com o que não funciona. Se já vende bem, vai otimizar seus processos e multiplicar resultados com menos esforço.</p>
-                    </div>
-                </details>
-
-                <details class="faq-item">
-                    <summary>As ferramentas de IA são pagas ou gratuitas?</summary>
-                    <div class="faq-answer">
-                        <p>A maioria é gratuita! O kit prioriza ferramentas com versão free robusta. Você consegue aplicar 90% das estratégias sem gastar nada além do R$ 47 do kit.</p>
+                        <p>Sim! Assim que o pagamento for confirmado (em até 5 minutos), você recebe por email todos os e-books em PDF, bônus, templates, acesso ao grupo VIP e link para o simulador de funil.</p>
                     </div>
                 </details>
             </div>
         </div>
     </section>
 
-    <!-- Final CTA -->
-    <section class="final-cta">
+    <!-- CTA FINAL -->
+    <section style="padding: 100px 20px; background: linear-gradient(135deg, rgba(218,165,32,0.2) 0%, rgba(8,77,110,0.4) 100%); text-align: center;">
         <div class="container">
-            <h2>🚀 Sua transformação começa agora</h2>
-            <p>
-                Cada dia sem ação é um dia a mais de vantagem para seus concorrentes.<br/>
-                Não deixe para amanhã o que pode mudar sua carreira hoje.
+            <h2 style="font-size: 42px; color: #daa520; margin-bottom: 25px; font-family: 'Urbanist', sans-serif;">
+                🚀 Sua transformação começa agora
+            </h2>
+            <p style="font-size: 20px; color: #ffffff; margin-bottom: 40px; line-height: 1.6; max-width: 700px; margin-left: auto; margin-right: auto;">
+                Oferta encerra em 48h. Após esse prazo, preço sobe para R$ 197 e o bônus da consultoria é removido.
             </p>
             
-            <div class="countdown-container" style="max-width: 500px;">
-                <span class="countdown-text">⏰ Última chance! Oferta expira em:</span>
-                <span class="countdown-timer" id="countdown-final">23:47:15</span>
+            <div class="countdown-container" style="max-width: 500px; margin-bottom: 40px;">
+                <span class="countdown-text">⏰ Última chance! Oferta encerra em:</span>
+                <span class="countdown-timer" id="countdown-final">47:59:00</span>
             </div>
 
-            <a href="#checkout" class="cta-button">Sim, quero o kit completo agora</a>
+            <a href="[INSERIR LINK CHECKOUT HOTMART]" class="cta-button">Garantir miga vaga na turma estrategista </a>
             
+            <div style="margin-top: 40px; font-size: 16px; color: #daa520; font-weight: 700;">
+                ✅ Preço promocional: R$ 97 por apenas 48 horas
+            </div>
+
             <div class="security-badges" style="margin-top: 30px; justify-content: center;">
                 <div class="security-badge-item">
                     <span>🔒</span> Pagamento seguro
@@ -1964,46 +1091,10 @@
                     <span>💳</span> Parcelamento disponível
                 </div>
             </div>
-
-            <div class="social-proof-bar" style="margin-top: 30px;">
-                ⭐ <strong>143 corretores</strong> adquiriram nas últimas 48h
-            </div>
-
-            <div class="guarantee-badge">
-                🛡️ Garantia incondicional de 7 dias • Investimento: R$ 47 (3x de R$ 17,90)
-            </div>
         </div>
     </section>
 
-    <!-- Checkout Section -->
-    <section id="checkout" style="padding: 100px 20px; background: rgba(0,0,0,0.8); text-align: center; border-top: 3px solid #daa520;">
-        <div class="container">
-            <h2 class="section-title">🎯 Finalize sua compra agora</h2>
-            <p style="font-size: 20px; color: #ffffff; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.7;">
-                Seu acesso ao Kit Máquina de Vendas Imobiliárias 2026 está garantido. 
-                Clique no botão abaixo para ir à página de pagamento 100% segura.
-            </p>
-            
-            <!-- SUBSTITUA ESTE LINK PELO SEU LINK DO HOTMART -->
-            <a href="SEU_LINK_HOTMART_AQUI" target="_blank" class="cta-button" style="font-size: 24px; padding: 30px 70px;">
-                Ir para pagamento seguro
-            </a>
-            
-            <div class="security-badges" style="margin-top: 30px; justify-content: center;">
-                <div class="security-badge-item">
-                    🔒 Ambiente criptografado
-                </div>
-                <div class="security-badge-item">
-                    🏦 Todas as bandeiras aceitas
-                </div>
-                <div class="security-badge-item">
-                    📱 Pix disponível
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
         <div class="container">
             <img src="https://redattolab.com.br/wp-content/uploads/2025/09/RedattoLAB-400-x-150-px.png" 
@@ -2016,11 +1107,6 @@
                 <a href="https://wa.me/5548999867086">📱 (48) 99986-7086</a>
                 <a href="mailto:contato@redattolab.com.br">📧 contato@redattolab.com.br</a>
                 <a href="https://redattolab.com.br">🌐 redattolab.com.br</a>
-            </div>
-            
-            <div class="legal-links">
-                <a href="https://redattolab.com.br/termos-de-uso" target="_blank">Termos de uso</a>
-                <a href="#" target="_blank">Política de privacidade</a>
             </div>
             
             <p style="margin-top: 30px; font-size: 14px; opacity: 0.7;">© 2026 RedattoLAB - Todos os direitos reservados</p>
@@ -2057,34 +1143,22 @@
                 if (--timer < 0) {
                     clearInterval(interval);
                     displays.forEach(display => {
-                        if (display) display.textContent = "Oferta expirada!";
+                        if (display) display.textContent = "Encerrado!";
                     });
                 }
             }, 1000);
         }
 
         window.onload = function () {
-            const duration = 60 * 60 * 24; // 24 horas
+            const duration = 48 * 60 * 60; // 48 horas
             
             const displays = [
                 document.getElementById('countdown'),
-                document.getElementById('countdown-price'),
                 document.getElementById('countdown-final')
             ];
             
             startCountdown(duration, displays);
         };
-
-        // Atualizar vagas restantes dinamicamente
-        function updateVagas() {
-            const vagasElement = document.getElementById('vagas-restantes');
-            if (vagasElement) {
-                const vagas = Math.floor(Math.random() * (45 - 32 + 1)) + 32;
-                vagasElement.textContent = vagas;
-            }
-            setTimeout(updateVagas, 45000); // Atualiza a cada 45 segundos
-        }
-        updateVagas();
 
         // Smooth scroll para âncoras
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
