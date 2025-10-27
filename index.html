@@ -357,7 +357,7 @@
 
         .testimonials-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 30px;
             max-width: 1200px;
             margin: 0 auto 40px auto;
@@ -366,7 +366,6 @@
         .testimonial-wrapper {
             display: flex;
             flex-direction: column;
-            width: 100%;
         }
 
         .testimonial-card {
@@ -377,12 +376,10 @@
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             backdrop-filter: blur(10px);
             box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-            aspect-ratio: 9/16;
-            width: 100%;
+            height: 380px;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 15px;
         }
 
         .testimonial-card:hover {
