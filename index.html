@@ -357,7 +357,7 @@
 
         .testimonials-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
             max-width: 1200px;
             margin: 0 auto 40px auto;
@@ -443,7 +443,7 @@
 
         .problem-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
             margin-bottom: 50px;
         }
@@ -476,7 +476,7 @@
 
         .authority-grid {
             display: grid;
-           grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
             max-width: 1000px;
             margin: 0 auto;
@@ -510,40 +510,65 @@
             background: linear-gradient(135deg, rgba(8,77,110,0.5) 0%, rgba(0,0,0,0.8) 100%);
         }
 
-        .value-list {
-            max-width: 900px;
-            margin: 0 auto;
-            background: rgba(8,77,110,0.3);
-            padding: 50px;
-            border-radius: 25px;
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .product-card {
+            background: linear-gradient(135deg, rgba(8,77,110,0.6) 0%, rgba(0,0,0,0.9) 100%);
+            padding: 30px;
+            border-radius: 20px;
             border: 2px solid rgba(218,165,32,0.4);
+            transition: all 0.3s;
         }
 
-        .value-list ul {
-            list-style: none;
-            margin-top: 25px;
+        .product-card:hover {
+            transform: translateY(-5px);
+            border-color: #daa520;
+            box-shadow: 0 15px 40px rgba(218,165,32,0.3);
         }
 
-        .value-list ul li {
-            padding: 15px 0 15px 40px;
-            position: relative;
-            color: #ffffff;
-            font-size: 18px;
+        .product-badge {
+            background: rgba(218,165,32,0.2);
+            color: #daa520;
+            padding: 6px 15px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 900;
+            display: inline-block;
+            margin-bottom: 15px;
+            border: 1px solid rgba(218,165,32,0.4);
+        }
+
+        .product-badge-main {
+            background: #daa520;
+            color: #000000;
+        }
+
+        .product-card h3 {
+            font-size: 20px;
+            color: #daa520;
+            margin-bottom: 12px;
+        }
+
+        .product-card p {
+            color: rgba(255,255,255,0.9);
+            font-size: 14px;
             line-height: 1.6;
         }
 
-        .value-list ul li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #daa520;
-            font-weight: 900;
-            font-size: 28px;
+        .consultoria-card {
+            background: linear-gradient(135deg, rgba(218,165,32,0.3) 0%, rgba(8,77,110,0.5) 100%);
+            border: 3px solid #daa520;
+            box-shadow: 0 0 30px rgba(218,165,32,0.5);
         }
 
         .price-section {
             background: linear-gradient(135deg, rgba(218,165,32,0.15) 0%, rgba(8,77,110,0.2) 100%);
-            padding: 60px;
+            padding: 40px 30px;
             border-radius: 30px;
             border: 3px solid #daa520;
             text-align: center;
@@ -557,17 +582,6 @@
             font-size: 36px;
             color: #daa520;
             margin-bottom: 30px;
-        }
-
-        .discount-badge {
-            background: #daa520;
-            color: #000000;
-            padding: 15px 40px;
-            border-radius: 30px;
-            font-size: 20px;
-            font-weight: 900;
-            display: inline-block;
-            margin: 30px 0;
         }
 
         .total-value {
@@ -708,18 +722,129 @@
             50% { box-shadow: 0 10px 50px rgba(37,211,102,0.9); }
         }
 
+        /* MEDIA QUERIES RESPONSIVAS */
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 36px;
-            }
-            .section-title {
                 font-size: 32px;
+                line-height: 1.2;
             }
+
+            .hero .subtitle {
+                font-size: 16px;
+            }
+
+            .section-title {
+                font-size: 28px;
+                margin-bottom: 40px;
+            }
+
+            .countdown-timer {
+                font-size: 28px;
+            }
+
+            .cta-button {
+                padding: 20px 40px;
+                font-size: 18px;
+                width: 100%;
+                max-width: 100%;
+            }
+
             .testimonials-grid {
                 grid-template-columns: 1fr;
             }
+
             .testimonial-card {
-                height: 350px;
+                height: 300px;
+            }
+
+            .problem-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .authority-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .price-section {
+                padding: 30px 20px;
+            }
+
+            .price-section h3 {
+                font-size: 28px;
+            }
+
+            .final-price {
+                font-size: 56px;
+            }
+
+            .installment {
+                font-size: 16px;
+            }
+
+            .faq-item summary {
+                padding: 20px;
+                font-size: 16px;
+            }
+
+            .faq-answer {
+                padding: 0 20px 20px 20px;
+                font-size: 14px;
+            }
+
+            .top-urgency-bar {
+                font-size: 12px;
+                padding: 10px 15px;
+            }
+
+            .security-badges {
+                gap: 10px;
+            }
+
+            .security-badge-item {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+
+            .footer-contact {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 40px 15px 60px;
+            }
+
+            .hero h1 {
+                font-size: 26px;
+            }
+
+            .badge {
+                font-size: 11px;
+                padding: 10px 20px;
+            }
+
+            .section-title {
+                font-size: 24px;
+            }
+
+            .problem-card,
+            .authority-card,
+            .product-card {
+                padding: 25px;
+            }
+
+            .countdown-timer {
+                font-size: 24px;
+            }
+
+            .final-price {
+                font-size: 48px;
             }
         }
     </style>
@@ -757,481 +882,10 @@
                      class="ebook-mockup">
             </div>
             
-            <a href="https://pay.hotmart.com/K102596943O" class="cta-button" style="margin-top: 30px;">Garantir minha vaga agora</a>
-
-            
-            <div class="security-badges">
-                <div class="security-badge-item">
-                    <span>🔒</span> Pagamento 100% seguro
-                </div>
-                <div class="security-badge-item">
-                    <span>🛡️</span> Garantia 7 dias
-                </div>
-                <div class="security-badge-item">
-                    <span>⚡</span> Acesso Imediato
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- DEPOIMENTOS -->
-    <section class="testimonials-section">
-        <div class="container">
-            <h2 class="section-title">💬 Conversas reais com corretores</h2>
-            
-            <div class="testimonials-grid">
-                <div class="testimonial-wrapper">
-                    <div class="testimonial-card">
-                        <img src="https://redattolab.com.br/wp-content/uploads/2025/10/Imagem-do-WhatsApp-de-2025-10-23-as-22.30.49_576336b8.jpg" 
-                             alt="Print conversa WhatsApp 3">
-                    </div>
-                    <div class="whatsapp-identity">
-                        <div class="whatsapp-identity-name">Camila S.</div>
-                        <div class="whatsapp-identity-info">Corretora há 2 anos • Belo Horizonte</div>
-                        <div class="whatsapp-verified">✓✓ Verificado via WhatsApp</div>
-                    </div>
-                </div>
-
-                <!-- PLACEHOLDERS PARA NOVOS PRINTS -->
-                <div class="testimonial-wrapper">
-                    <div class="testimonial-card">
-                        <img src="https://redattolab.com.br/wp-content/uploads/2025/10/Imagem-do-WhatsApp-de-2025-10-23-as-22.30.49_f23479df.jpg" 
-                             alt="Print conversa WhatsApp 4">
-                    </div>
-                    <div class="whatsapp-identity">
-                        <div class="whatsapp-identity-name">Carlos R.</div>
-                        <div class="whatsapp-identity-info">Corretor autônomo há 18 anos</div>
-                        <div class="whatsapp-verified">✓✓ Verificado via WhatsApp</div>
-                    </div>
-                </div>
-
-                <div class="testimonial-wrapper">
-                    <div class="testimonial-card">
-                        <img src="https://redattolab.com.br/wp-content/uploads/2025/10/Imagem-do-WhatsApp-de-2025-10-23-as-22.30.49_33f89eb9.jpg" 
-                             alt="Print conversa WhatsApp 5">
-                    </div>
-                    <div class="whatsapp-identity">
-                        <div class="whatsapp-identity-name">Simone E.</div>
-                        <div class="whatsapp-identity-info">Proprietária de imobiliária no DF</div>
-                        <div class="whatsapp-verified">✓✓ Verificado via WhatsApp</div>
-                    </div>
-                </div>
-<div class="testimonial-wrapper">
-                    <div class="testimonial-card">
-                        <img src="https://redattolab.com.br/wp-content/uploads/2025/10/Imagem-do-WhatsApp-de-2025-10-23-as-22.30.48_06edc855.jpg" 
-                             alt="Print conversa WhatsApp 6">
-                    </div>
-                    <div class="whatsapp-identity">
-                        <div class="whatsapp-identity-name">Lurdes L..</div>
-                        <div class="whatsapp-identity-info">Corretora autônoma, Porto Alegre</div>
-                        <div class="whatsapp-verified">✓✓ Verificado via WhatsApp</div>
-                    </div>
-                </div>
-              <div class="testimonials-grid">
-                <div class="testimonial-wrapper">
-                    <div class="testimonial-card">
-                        <img src="https://redattolab.com.br/wp-content/uploads/2025/10/Imagem-do-WhatsApp-de-2025-10-27-as-00.00.14_3373aec2.jpg" 
-                             alt="Print conversa WhatsApp 3">
-                    </div>
-                    <div class="whatsapp-identity">
-                        <div class="whatsapp-identity-name">Santiago P.</div>
-                        <div class="whatsapp-identity-info">Corretor há 8 anos • São Paulo</div>
-                        <div class="whatsapp-verified">✓✓ Verificado via WhatsApp</div>
-                    </div>
-                </div>  
-                  <div class="testimonials-grid">
-                <div class="testimonial-wrapper">
-                    <div class="testimonial-card">
-                        <img src="https://redattolab.com.br/wp-content/uploads/2025/10/Imagem-do-WhatsApp-de-2025-10-26-as-23.59.53_d2a1ff46.jpg" 
-                             alt="Print conversa WhatsApp 3">
-                    </div>
-                    <div class="whatsapp-identity">
-                        <div class="whatsapp-identity-name">Natália M.</div>
-                        <div class="whatsapp-identity-info">Corretora há 3 anos • Caxias do Sul</div>
-                        <div class="whatsapp-verified">✓✓ Verificado via WhatsApp</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </section>
-
-    <!-- PROBLEMA -->
-    <section class="problem-section">
-        <div class="container">
-            <h2 class="section-title">❌ Se você está nessa situação...</h2>
-            
-            <div class="problem-grid">
-                <div class="problem-card">
-                    <h3>📱 Posts bonitos, inbox vazio</h3>
-                    <p>Você posta 3-4 vezes por semana, mas recebe ZERO mensagens de clientes interessados. Curtidas não pagam conta.</p>
-                </div>
-
-                <div class="problem-card">
-                    <h3>🎲 Faturamento instável</h3>
-                    <p>Janeiro: 3 vendas. Ssetembro: 0. Dependendo só de indicação é loteria. Você precisa de previsibilidade.</p>
-                </div>
-
-                <div class="problem-card">
-                    <h3>⏰ Sem tempo para criar conteúdo</h3>
-                    <p>Leva 2 horas para escrever uma legenda e gravar um vídeo. Seus concorrentes postam todo dia enquanto você luta contra o tempo.</p>
-                </div>
-
-                <div class="problem-card">
-                    <h3>🔍 Invisível no digital</h3>
-                    <p>Aquele corretor que começou depois de você já tem fila de espera. A diferença? Ele domina o jogo que você não conhece.</p>
-                </div>
-            </div>
-
-            <div style="text-align: center; margin-top: 50px; padding: 40px; background: rgba(218,165,32,0.1); border-radius: 20px; border: 2px solid rgba(218,165,32,0.4); max-width: 800px; margin-left: auto; margin-right: auto;">
-                <h3 style="font-size: 28px; color: #daa520; margin-bottom: 20px;">✅ Existe um método testado e acessível</h3>
-                <p style="font-size: 18px; color: #ffffff; line-height: 1.8;">
-                    Em 2026, corretores que dominam marketing digital faturam 5x mais trabalhando metade do tempo. 
-                    Este kit mostra exatamente como fazer parte desse grupo.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- SOBRE A REDATTOLAB -->
-    <section class="authority-section">
-        <div class="container">
-            <h2 class="section-title">🏢 Quem está por trás deste método</h2>
-            
-            <div style="max-width: 1100px; margin: 0 auto;">
-                
-                <!-- Grid de Resultados -->
-                <div class="authority-grid" style="margin-bottom: 50px;">
-                    <div class="authority-card">
-                        <span class="authority-number">12+</span>
-                        <p style="color: #ffffff; font-size: 16px;">anos atuando com marketing digital para imobiliárias de médio e grande porte</p>
-                    </div>
-
-                    <div class="authority-card">
-                        <span class="authority-number">8</span>
-                        <p style="color: #ffffff; font-size: 16px;">países atendidos (Brasil, Uruguai, Argentina, Chile, Colômbia, Peru, Panamá e México) com estratégias adaptadas</p>
-                    </div>
-
-                    <div class="authority-card">
-                        <span class="authority-number">2</span>
-                        <p style="color: #ffffff; font-size: 16px;">imóveis vendidos em 36 dias para imobiliária no Uruguai usando apenas tráfego pago</p>
-                    </div>
-
-                    <div class="authority-card">
-                        <span class="authority-number">11.8k</span>
-                        <p style="color: #ffffff; font-size: 16px;">seguidores gerados para corretor em 4 meses (partiu de 1.200) com estratégia combinada SEO/SEM</p>
-                    </div>
-                </div>
-
-                <!-- Quem Criou -->
-                <div style="background: linear-gradient(135deg, rgba(8,77,110,0.6) 0%, rgba(0,0,0,0.9) 100%); padding: 45px; border-radius: 20px; border: 2px solid rgba(218,165,32,0.4); margin-bottom: 30px;">
-                    <h3 style="color: #daa520; font-size: 26px; margin-bottom: 20px;">👤 Estrategista-Líder</h3>
-                    <p style="color: #ffffff; font-size: 17px; line-height: 1.8;">
-                        Especialista com <strong style="color: #daa520;">12 anos de experiência</strong> em marketing digital em território brasileiro e hispano-americano. 
-                        Atuou <strong style="color: #daa520;">5 anos em unicórnio proptech brasileira</strong> produzindo conteúdo para os blogs de 5 mercados,
-                        Colômbia, Panamá, Peru, Argentina e Chile. Desenvolveu o <strong style="color: #daa520;">Método DACE</strong> 
-                        e o <strong style="color: #daa520;">Sistema SNAP</strong> de gerenciamento de leads, ambos proprietários e focados 
-                        em conversão para o mercado imobiliário.
-                    </p>
-                </div>
-
-                <!-- Sobre a Agência -->
-                <div style="background: linear-gradient(135deg, rgba(8,77,110,0.6) 0%, rgba(0,0,0,0.9) 100%); padding: 45px; border-radius: 20px; border: 2px solid rgba(218,165,32,0.4);">
-                    <h3 style="color: #daa520; font-size: 26px; margin-bottom: 20px;">🌎 RedattoLAB • Equipe Internacional</h3>
-                    <p style="color: #ffffff; font-size: 17px; line-height: 1.8; margin-bottom: 20px;">
-                        Nasce da vontade de entregar resultados palpáveis, baseados em valores inegociáveis como transparência, honestidade e cultura data-driven. Trabalhamos exclusivamente com <strong style="color: #daa520;">especialistas plenos e seniores</strong> 
-                        com mais de 3 anos de atuação em marketing digital. Equipe internacional com profissionais do Brasil 
-                        e países da América Hispânica.
-                    </p>
-                    <p style="color: #ffffff; font-size: 17px; line-height: 1.8; margin-bottom: 25px;">
-                        <strong style="color: #daa520;">Por que equipe local?</strong> Acreditamos que know-how nos mercados atendidos 
-                        é muito mais eficiente do que "achar que funciona lá". Trabalhamos com profissionais que vivem e respiram 
-                        a realidade de cada país, garantindo estratégias totalmente adaptadas aos mercados locais.
-                    </p>
-                    <div style="background: rgba(218,165,32,0.1); padding: 25px; border-radius: 15px; border-left: 4px solid #daa520;">
-                        <p style="color: #daa520; font-weight: 700; font-size: 18px; margin-bottom: 10px;">🎯 Foco total em conversão</p>
-                        <p style="color: #ffffff; font-size: 16px; line-height: 1.7;">
-                            Utilizamos exclusivamente o <strong>Método DACE</strong> (metodologia proprietária de análise e otimização de campanhas) 
-                            e o <strong>Sistema SNAP</strong> (sistema de gerenciamento de leads que maximiza o aproveitamento do budget de midia) para garantir resultados acima da média 
-                            e previsíveis em todos os projetos.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- O QUE VEM NO KIT -->
-    <section class="value-stack-section" id="oferta">
-        <div class="container">
-            <h2 class="section-title">📦 O que você recebe no kit completo</h2>
-            
-            <!-- GRID DE CARDS DOS ENTREGÁVEIS -->
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; margin-top: 40px;">
-
-    <!-- CARD 1 - E-book Principal -->
-    <div style="background: linear-gradient(135deg, rgba(8,77,110,0.6) 0%, rgba(0,0,0,0.9) 100%); padding: 30px; border-radius: 20px; border: 2px solid rgba(218,165,32,0.4); transition: all 0.3s;">
-        <div style="background: rgba(218,165,32,0.2); color: #daa520; padding: 6px 15px; border-radius: 12px; font-size: 12px; font-weight: 900; display: inline-block; margin-bottom: 15px; border: 1px solid rgba(218,165,32,0.4);">
-            📘 PRODUTO PRINCIPAL • R$ 47
-        </div>
-        <h3 style="font-size: 20px; color: #daa520; margin-bottom: 12px;">E-book Tendências 2026</h3>
-        <p style="color: rgba(255,255,255,0.9); font-size: 14px; line-height: 1.6;">
-            25 páginas com estratégias para Instagram, TikTok e YouTube Shorts. IA para conteúdo, funis automatizados e anúncios com ROI comprovado.
-        </p>
-    </div>
-
-    <!-- CARD 2 - Kit 15 Prompts -->
-    <div style="background: linear-gradient(135deg, rgba(8,77,110,0.6) 0%, rgba(0,0,0,0.9) 100%); padding: 30px; border-radius: 20px; border: 2px solid rgba(218,165,32,0.4); transition: all 0.3s;">
-        <div style="background: #daa520; color: #000000; padding: 6px 15px; border-radius: 12px; font-size: 12px; font-weight: 900; display: inline-block; margin-bottom: 15px;">
-            BÔNUS #1 • R$ 97
-        </div>
-        <h3 style="font-size: 20px; color: #daa520; margin-bottom: 12px;">🤖 Kit Corretor Digital 2026</h3>
-        <p style="color: rgba(255,255,255,0.9); font-size: 14px; line-height: 1.6;">
-            51 páginas com 15 prompts profissionais de IA. Copie, cole e gere descrições magnéticas, posts e roteiros em minutos.
-        </p>
-    </div>
-
-    <!-- CARD 3 - Prompts Secretos -->
-    <div style="background: linear-gradient(135deg, rgba(8,77,110,0.6) 0%, rgba(0,0,0,0.9) 100%); padding: 30px; border-radius: 20px; border: 2px solid rgba(218,165,32,0.4); transition: all 0.3s;">
-        <div style="background: #daa520; color: #000000; padding: 6px 15px; border-radius: 12px; font-size: 12px; font-weight: 900; display: inline-block; margin-bottom: 15px;">
-            BÔNUS #2 • R$ 27
-        </div>
-        <h3 style="font-size: 20px; color: #daa520; margin-bottom: 12px;">💎 Guia Prompts Secretos</h3>
-        <p style="color: rgba(255,255,255,0.9); font-size: 14px; line-height: 1.6;">
-            2 prompts de elite: Gerador de Ideias Infinito (9 ideias em 2 min) + Analisador de Performance com insights acionáveis.
-        </p>
-    </div>
-
-    <!-- CARD 4 - Templates E-mail -->
-    <div style="background: linear-gradient(135deg, rgba(8,77,110,0.6) 0%, rgba(0,0,0,0.9) 100%); padding: 30px; border-radius: 20px; border: 2px solid rgba(218,165,32,0.4); transition: all 0.3s;">
-        <div style="background: #daa520; color: #000000; padding: 6px 15px; border-radius: 12px; font-size: 12px; font-weight: 900; display: inline-block; margin-bottom: 15px;">
-            BÔNUS #3 • R$ 27
-        </div>
-        <h3 style="font-size: 20px; color: #daa520; margin-bottom: 12px;">✉️ 3 Templates de E-mail</h3>
-        <p style="color: rgba(255,255,255,0.9); font-size: 14px; line-height: 1.6;">
-            Taxa de abertura de até 71%. Scripts prontos: follow-up pós-visita, reativação de lead frio e última chamada com urgência.
-        </p>
-    </div>
-
-    <!-- CARD 5 - Scripts WhatsApp -->
-    <div style="background: linear-gradient(135deg, rgba(8,77,110,0.6) 0%, rgba(0,0,0,0.9) 100%); padding: 30px; border-radius: 20px; border: 2px solid rgba(218,165,32,0.4); transition: all 0.3s;">
-        <div style="background: #daa520; color: #000000; padding: 6px 15px; border-radius: 12px; font-size: 12px; font-weight: 900; display: inline-block; margin-bottom: 15px;">
-            BÔNUS #4 • R$ 37
-        </div>
-        <h3 style="font-size: 20px; color: #daa520; margin-bottom: 12px;">💬 5 Scripts de WhatsApp</h3>
-        <p style="color: rgba(255,255,255,0.9); font-size: 14px; line-height: 1.6;">
-            98% taxa de abertura e 45-60% de resposta. Para cada fase: primeiro contato, qualificação, agendamento, pós-visita e fechamento.
-        </p>
-    </div>
-
-    <!-- CARD 6 - Toolkit Premium -->
-    <div style="background: linear-gradient(135deg, rgba(8,77,110,0.6) 0%, rgba(0,0,0,0.9) 100%); padding: 30px; border-radius: 20px; border: 2px solid rgba(218,165,32,0.4); transition: all 0.3s;">
-        <div style="background: #daa520; color: #000000; padding: 6px 15px; border-radius: 12px; font-size: 12px; font-weight: 900; display: inline-block; margin-bottom: 15px;">
-            BÔNUS #5 • R$ 47
-        </div>
-        <h3 style="font-size: 20px; color: #daa520; margin-bottom: 12px;">🛠️ Toolkit Premium</h3>
-        <p style="color: rgba(255,255,255,0.9); font-size: 14px; line-height: 1.6;">
-            Checklists, templates Canva editáveis, 15+ ferramentas de IA testadas, CRM simplificado e trackers de métricas.
-        </p>
-    </div>
-
-    <!-- CARD 7 - Guia IA -->
-    <div style="background: linear-gradient(135deg, rgba(8,77,110,0.6) 0%, rgba(0,0,0,0.9) 100%); padding: 30px; border-radius: 20px; border: 2px solid rgba(218,165,32,0.4); transition: all 0.3s;">
-        <div style="background: #daa520; color: #000000; padding: 6px 15px; border-radius: 12px; font-size: 12px; font-weight: 900; display: inline-block; margin-bottom: 15px;">
-            BÔNUS #6 • R$ 47
-        </div>
-        <h3 style="font-size: 20px; color: #daa520; margin-bottom: 12px;">🎓 Guia Rápido de IA</h3>
-        <p style="color: rgba(255,255,255,0.9); font-size: 14px; line-height: 1.6;">
-            6 páginas práticas. Aprenda a usar as principais ferramentas de IA gratuitas com passo a passo simplificado.
-        </p>
-    </div>
-
-    <!-- CARD 8 - Simulador -->
-    <div style="background: linear-gradient(135deg, rgba(8,77,110,0.6) 0%, rgba(0,0,0,0.9) 100%); padding: 30px; border-radius: 20px; border: 2px solid rgba(218,165,32,0.4); transition: all 0.3s;">
-        <div style="background: #daa520; color: #000000; padding: 6px 15px; border-radius: 12px; font-size: 12px; font-weight: 900; display: inline-block; margin-bottom: 15px;">
-            BÔNUS #7 • R$ 97
-        </div>
-        <h3 style="font-size: 20px; color: #daa520; margin-bottom: 12px;">📊 Simulador de Funil</h3>
-        <p style="color: rgba(255,255,255,0.9); font-size: 14px; line-height: 1.6;">
-            Calcule seu potencial de leads e vendas. Elimina achismos e te mostra exatamente quantos leads precisa gerar.
-        </p>
-    </div>
-
-    <!-- CARD 9 - Grupo VIP -->
-    <div style="background: linear-gradient(135deg, rgba(8,77,110,0.6) 0%, rgba(0,0,0,0.9) 100%); padding: 30px; border-radius: 20px; border: 2px solid rgba(218,165,32,0.4); transition: all 0.3s;">
-        <div style="background: #daa520; color: #000000; padding: 6px 15px; border-radius: 12px; font-size: 12px; font-weight: 900; display: inline-block; margin-bottom: 15px;">
-            BÔNUS #8 • R$ 47
-        </div>
-        <h3 style="font-size: 20px; color: #daa520; margin-bottom: 12px;">👥 Grupo VIP RedattoLAB</h3>
-        <p style="color: rgba(255,255,255,0.9); font-size: 14px; line-height: 1.6;">
-            Comunidade exclusiva. Troque experiências, tire dúvidas rápidas e receba atualizações em primeira mão.
-        </p>
-    </div>
-
-    <!-- CARD 10 - CONSULTORIA (DESTAQUE) -->
-    <div style="background: linear-gradient(135deg, rgba(218,165,32,0.3) 0%, rgba(8,77,110,0.5) 100%); padding: 30px; border-radius: 20px; border: 3px solid #daa520; box-shadow: 0 0 30px rgba(218,165,32,0.5); grid-column: span 2;">
-        <div style="background: #daa520; color: #000000; padding: 6px 15px; border-radius: 12px; font-size: 12px; font-weight: 900; display: inline-block; margin-bottom: 15px;">
-            🎁 BÔNUS SURPRESA PARA ESTA TURMA• R$ 497
-        </div>
-        <h3 style="font-size: 22px; color: #daa520; margin-bottom: 12px;">🎯 Consultoria Estratégica 1 hora</h3>
-        <p style="color: rgba(255,255,255,0.95); font-size: 15px; line-height: 1.7;">
-            Sessão individual com especialista da RedattoLAB. Após a compra, você agenda via WhatsApp. Preenchemos juntos um diagnóstico antes da sessão para aproveitar cada minuto. Você sai com plano de ação claro e insights práticos. Sem enrolação, só resultado. Disponível no kit somente para quem adquirir nas 72 horas de lançamento ou enquanto houverem vagas para a turma Estrategista. Após esse período, o bônus será retirado e o preço do kit aumentará.
-        </p>
-    </div>
-   
-</div>
-            </div>
-
-            <!-- PREÇO -->
-            <div class="price-section">
-                <h3>💰 Investimento turma estrategista</h3>
-                
-                <div style="text-align: center; margin-top: 50px; padding: 40px; background: rgba(8,77,110,0.3); border-radius: 20px; border: 2px solid rgba(218,165,32,0.3);">
-    
-    <p style="font-size: 18px; color: rgba(255,255,255,0.7); margin-bottom: 10px;">
-        Valor total dos 10 produtos:
-    </p>
-    
-    <p style="font-size: 32px; color: rgba(255,255,255,0.5); text-decoration: line-through; margin-bottom: 5px; font-weight: 600;">
-        R$ 970,00
-    </p>
-    
-    <div style="background: rgba(218,165,32,0.2); display: inline-block; padding: 8px 20px; border-radius: 12px; border: 1px solid rgba(218,165,32,0.4); margin-bottom: 20px;">
-        <span style="color: #daa520; font-size: 16px; font-weight: 700;">
-            🔥 90% de desconto aplicado
-        </span>
-    </div>
-                <div class="final-price">R$ 97</div>
-<div class="installment">ou 12x de R$ 10,03 no cartão</div>
-<p style="font-size: 16px; color: #daa520; margin-top: 15px; font-weight: 700;">
-    💡 Menos que 2 cafés por mês
-</p>
-                <a href="https://pay.hotmart.com/K102596943O" class="cta-button" style="margin-top: 30px;">Garantir minha vaga agora</a>
-
-                <div class="security-badges" style="margin-top: 25px; justify-content: center;">
-                    <div class="security-badge-item">
-                        <span>🔒</span> Ambiente 100% seguro
-                    </div>
-                    <div class="security-badge-item">
-                        <span>🛡️</span> Garantia de 7 dias
-                    </div>
-                    <div class="security-badge-item">
-                        <span>⚡</span> Acesso imediato
-                    </div>
-                </div>
-
-                <div class="guarantee-badge">
-                    🛡️ Garantia incondicional de 7 dias • Risco zero
-                </div>
-
-                <p style="font-size: 14px; color: rgba(255,255,255,0.7); margin-top: 30px;">
-                    Após 72h, preço sobe para R$ 197 e bônus da consultoria é removido
-                </p>
-            </div>
-        </div>
-    </section>
-<!-- PARA QUEM É -->
-    <section style="padding: 80px 20px; background: rgba(0,0,0,0.6);">
-    <div class="container">
-        <h2 class="section-title">✅ Este kit é para você se...</h2>
-        
-        <div style="max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
-            
-            <div style="background: rgba(8,77,110,0.4); padding: 30px; border-radius: 20px; border: 2px solid rgba(218,165,32,0.3);">
-                <h3 style="color: #daa520; font-size: 20px; margin-bottom: 15px;">✅ Corretor sério</h3>
-                <p style="color: #ffffff; font-size: 16px; line-height: 1.7;">Quer sistema comprovado e está disposto a implementar (não busca fórmula mágica).</p>
-            </div>
-
-            <div style="background: rgba(8,77,110,0.4); padding: 30px; border-radius: 20px; border: 2px solid rgba(218,165,32,0.3);">
-                <h3 style="color: #daa520; font-size: 20px; margin-bottom: 15px;">⏰ Sem tempo</h3>
-                <p style="color: #ffffff; font-size: 16px; line-height: 1.7;">Precisa de ferramentas que economizam 10-15h/semana usando IA.</p>
-            </div>
-
-            <div style="background: rgba(8,77,110,0.4); padding: 30px; border-radius: 20px; border: 2px solid rgba(218,165,32,0.3);">
-                <h3 style="color: #daa520; font-size: 20px; margin-bottom: 15px;">💰 ROI garantido</h3>
-                <p style="color: #ffffff; font-size: 16px; line-height: 1.7;">Quer investimento que se paga na primeira venda (R$ 97 vs comissões de milhares).</p>
-            </div>
-
-        </div>
-
-        <div style="text-align: center; margin-top: 50px; padding: 30px; background: rgba(218,165,32,0.1); border-radius: 20px; border: 2px solid rgba(218,165,32,0.4); max-width: 700px; margin-left: auto; margin-right: auto;">
-            <h3 style="color: #daa520; font-size: 24px; margin-bottom: 15px;">❌ NÃO é para você se...</h3>
-            <p style="color: #ffffff; font-size: 16px; line-height: 1.7;">Busca atalhos ou quer resultados sem implementar nada. Este é um sistema de trabalho inteligente, não mágica.</p>
-        </div>
-
-    </div>
-</section>
-
-    <!-- FAQ -->
-    <section class="faq-section">
-        <div class="container">
-            <h2 class="section-title">❓ Perguntas frequentes</h2>
-            
-            <div class="faq-accordion">
-                <details class="faq-item">
-                    <summary>Não tenho tempo para postar todo dia. Isso vai funcionar pra mim?</summary>
-                    <div class="faq-answer">
-                        <p>Sim! O método mostra como criar conteúdo em lote usando IA. Você dedica 1 hora por semana e agenda tudo. Os prompts são feitos para quem não tem tempo a perder.</p>
-                    </div>
-                </details>
-                
-                <details class="faq-item">
-                    <summary>Não entendo nada de marketing digital. É muito técnico?</summary>
-                    <div class="faq-answer">
-                        <p>Não. Linguagem simples, passo a passo, sem jargões complicados. Se você sabe usar WhatsApp, consegue aplicar tudo que está no kit.</p>
-                    </div>
-                </details>
-                
-                <details class="faq-item">
-                    <summary>Já tentei marketing digital e não funcionou. Por que seria diferente?</summary>
-                    <div class="faq-answer">
-                        <p>Provavelmente faltou método. Este kit mostra o caminho completo testado em 5 países e usado por profissionais do ramo imobiliário. Não é teoria, é aplicação prática.</p>
-                    </div>
-                </details>
-
-                <details class="faq-item">
-                    <summary>Preciso aparecer na câmera ou criar reels o tempo todo?</summary>
-                    <div class="faq-answer">
-                        <p>Não necessariamente. O kit ensina estratégias de conteúdo com e sem aparecer. Existem formatos que geram ótimos resultados sem você precisar gravar vídeos.</p>
-                    </div>
-                </details>
-                
-                <details class="faq-item">
-                    <summary>Como funciona a garantia?</summary>
-                    <div class="faq-answer">
-                        <p>7 dias incondicional. Se não agregar valor ao seu negócio, basta enviar um email e devolvemos 100% do investimento. Sem perguntas, sem burocracia.</p>
-                    </div>
-                </details>
-                
-                <details class="faq-item">
-                    <summary>Recebo o material na hora?</summary>
-                    <div class="faq-answer">
-                        <p>Sim! Assim que o pagamento for confirmado (em até 5 minutos), você recebe por email todos os e-books em PDF, bônus, templates, acesso ao grupo VIP e link para o simulador de funil.</p>
-                    </div>
-                </details>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA FINAL -->
-    <section style="padding: 100px 20px; background: linear-gradient(135deg, rgba(218,165,32,0.2) 0%, rgba(8,77,110,0.4) 100%); text-align: center;">
-        <div class="container">
-            <h2 style="font-size: 42px; color: #daa520; margin-bottom: 25px; font-family: 'Urbanist', sans-serif;">
-                🚀 Sua transformação começa agora
-            </h2>
-            <p style="font-size: 20px; color: #ffffff; margin-bottom: 40px; line-height: 1.6; max-width: 700px; margin-left: auto; margin-right: auto;">
-                Oferta encerra em 48h. Após esse prazo, preço sobe para R$ 197 e o bônus da consultoria é removido.
-            </p>
-            
-            <div class="countdown-container" style="max-width: 500px; margin-bottom: 40px;">
-                <span class="countdown-text">⏰ Última chance! Oferta encerra em:</span>
-                <span class="countdown-timer" id="countdown-final">47:59:00</span>
-            </div>
-
-            <a href="https://pay.hotmart.com/K102596943O" class="cta-button">Garantir minha vaga na turma estrategista </a>
+            <a href="https://pay.hotmart.com/K102596943O" class="cta-button">Garantir minha vaga na turma estrategista</a>
             
             <div style="margin-top: 40px; font-size: 16px; color: #daa520; font-weight: 700;">
-                ✅ Preço promocional: R$ 97 por apenas 48 horas
+                ✅ Preço promocional: R$ 97 por apenas 72 horas
             </div>
 
             <div class="security-badges" style="margin-top: 30px; justify-content: center;">
@@ -1346,4 +1000,469 @@
         });
     </script>
 </body>
-</html>
+</html>cta-button" style="margin-top: 30px;">Garantir minha vaga agora</a>
+
+            
+            <div class="security-badges">
+                <div class="security-badge-item">
+                    <span>🔒</span> Pagamento 100% seguro
+                </div>
+                <div class="security-badge-item">
+                    <span>🛡️</span> Garantia 7 dias
+                </div>
+                <div class="security-badge-item">
+                    <span>⚡</span> Acesso Imediato
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">💬 Conversas reais com corretores</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-wrapper">
+                    <div class="testimonial-card">
+                        <img src="https://redattolab.com.br/wp-content/uploads/2025/10/Imagem-do-WhatsApp-de-2025-10-23-as-22.30.49_576336b8.jpg" 
+                             alt="Print conversa WhatsApp 3">
+                    </div>
+                    <div class="whatsapp-identity">
+                        <div class="whatsapp-identity-name">Camila S.</div>
+                        <div class="whatsapp-identity-info">Corretora há 2 anos • Belo Horizonte</div>
+                        <div class="whatsapp-verified">✓✓ Verificado via WhatsApp</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-wrapper">
+                    <div class="testimonial-card">
+                        <img src="https://redattolab.com.br/wp-content/uploads/2025/10/Imagem-do-WhatsApp-de-2025-10-23-as-22.30.49_f23479df.jpg" 
+                             alt="Print conversa WhatsApp 4">
+                    </div>
+                    <div class="whatsapp-identity">
+                        <div class="whatsapp-identity-name">Carlos R.</div>
+                        <div class="whatsapp-identity-info">Corretor autônomo há 18 anos</div>
+                        <div class="whatsapp-verified">✓✓ Verificado via WhatsApp</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-wrapper">
+                    <div class="testimonial-card">
+                        <img src="https://redattolab.com.br/wp-content/uploads/2025/10/Imagem-do-WhatsApp-de-2025-10-23-as-22.30.49_33f89eb9.jpg" 
+                             alt="Print conversa WhatsApp 5">
+                    </div>
+                    <div class="whatsapp-identity">
+                        <div class="whatsapp-identity-name">Simone E.</div>
+                        <div class="whatsapp-identity-info">Proprietária de imobiliária no DF</div>
+                        <div class="whatsapp-verified">✓✓ Verificado via WhatsApp</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-wrapper">
+                    <div class="testimonial-card">
+                        <img src="https://redattolab.com.br/wp-content/uploads/2025/10/Imagem-do-WhatsApp-de-2025-10-23-as-22.30.48_06edc855.jpg" 
+                             alt="Print conversa WhatsApp 6">
+                    </div>
+                    <div class="whatsapp-identity">
+                        <div class="whatsapp-identity-name">Lurdes L.</div>
+                        <div class="whatsapp-identity-info">Corretora autônoma, Porto Alegre</div>
+                        <div class="whatsapp-verified">✓✓ Verificado via WhatsApp</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-wrapper">
+                    <div class="testimonial-card">
+                        <img src="https://redattolab.com.br/wp-content/uploads/2025/10/Imagem-do-WhatsApp-de-2025-10-27-as-00.00.14_3373aec2.jpg" 
+                             alt="Print conversa WhatsApp 7">
+                    </div>
+                    <div class="whatsapp-identity">
+                        <div class="whatsapp-identity-name">Santiago P.</div>
+                        <div class="whatsapp-identity-info">Corretor há 8 anos • São Paulo</div>
+                        <div class="whatsapp-verified">✓✓ Verificado via WhatsApp</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-wrapper">
+                    <div class="testimonial-card">
+                        <img src="https://redattolab.com.br/wp-content/uploads/2025/10/Imagem-do-WhatsApp-de-2025-10-26-as-23.59.53_d2a1ff46.jpg" 
+                             alt="Print conversa WhatsApp 8">
+                    </div>
+                    <div class="whatsapp-identity">
+                        <div class="whatsapp-identity-name">Natália M.</div>
+                        <div class="whatsapp-identity-info">Corretora há 3 anos • Caxias do Sul</div>
+                        <div class="whatsapp-verified">✓✓ Verificado via WhatsApp</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEMA -->
+    <section class="problem-section">
+        <div class="container">
+            <h2 class="section-title">❌ Se você está nessa situação...</h2>
+            
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <h3>📱 Posts bonitos, inbox vazio</h3>
+                    <p>Você posta 3-4 vezes por semana, mas recebe ZERO mensagens de clientes interessados. Curtidas não pagam conta.</p>
+                </div>
+
+                <div class="problem-card">
+                    <h3>🎲 Faturamento instável</h3>
+                    <p>Janeiro: 3 vendas. Setembro: 0. Dependendo só de indicação é loteria. Você precisa de previsibilidade.</p>
+                </div>
+
+                <div class="problem-card">
+                    <h3>⏰ Sem tempo para criar conteúdo</h3>
+                    <p>Leva 2 horas para escrever uma legenda e gravar um vídeo. Seus concorrentes postam todo dia enquanto você luta contra o tempo.</p>
+                </div>
+
+                <div class="problem-card">
+                    <h3>🔍 Invisível no digital</h3>
+                    <p>Aquele corretor que começou depois de você já tem fila de espera. A diferença? Ele domina o jogo que você não conhece.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px; padding: 40px; background: rgba(218,165,32,0.1); border-radius: 20px; border: 2px solid rgba(218,165,32,0.4); max-width: 800px; margin-left: auto; margin-right: auto;">
+                <h3 style="font-size: 28px; color: #daa520; margin-bottom: 20px;">✅ Existe um método testado e acessível</h3>
+                <p style="font-size: 18px; color: #ffffff; line-height: 1.8;">
+                    Em 2026, corretores que dominam marketing digital faturam 5x mais trabalhando metade do tempo. 
+                    Este kit mostra exatamente como fazer parte desse grupo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE A REDATTOLAB -->
+    <section class="authority-section">
+        <div class="container">
+            <h2 class="section-title">🏢 Quem está por trás deste método</h2>
+            
+            <div style="max-width: 1100px; margin: 0 auto;">
+                
+                <!-- Grid de Resultados -->
+                <div class="authority-grid" style="margin-bottom: 50px;">
+                    <div class="authority-card">
+                        <span class="authority-number">12+</span>
+                        <p style="color: #ffffff; font-size: 16px;">anos atuando com marketing digital para imobiliárias de médio e grande porte</p>
+                    </div>
+
+                    <div class="authority-card">
+                        <span class="authority-number">8</span>
+                        <p style="color: #ffffff; font-size: 16px;">países atendidos (Brasil, Uruguai, Argentina, Chile, Colômbia, Peru, Panamá e México) com estratégias adaptadas</p>
+                    </div>
+
+                    <div class="authority-card">
+                        <span class="authority-number">2</span>
+                        <p style="color: #ffffff; font-size: 16px;">imóveis vendidos em 36 dias para imobiliária no Uruguai usando apenas tráfego pago</p>
+                    </div>
+
+                    <div class="authority-card">
+                        <span class="authority-number">11.8k</span>
+                        <p style="color: #ffffff; font-size: 16px;">seguidores gerados para corretor em 4 meses (partiu de 1.200) com estratégia combinada SEO/SEM</p>
+                    </div>
+                </div>
+
+                <!-- Quem Criou -->
+                <div style="background: linear-gradient(135deg, rgba(8,77,110,0.6) 0%, rgba(0,0,0,0.9) 100%); padding: 45px; border-radius: 20px; border: 2px solid rgba(218,165,32,0.4); margin-bottom: 30px;">
+                    <h3 style="color: #daa520; font-size: 26px; margin-bottom: 20px;">👤 Estrategista-Líder</h3>
+                    <p style="color: #ffffff; font-size: 17px; line-height: 1.8;">
+                        Especialista com <strong style="color: #daa520;">12 anos de experiência</strong> em marketing digital em território brasileiro e hispano-americano. 
+                        Atuou <strong style="color: #daa520;">5 anos em unicórnio proptech brasileira</strong> produzindo conteúdo para os blogs de 5 mercados,
+                        Colômbia, Panamá, Peru, Argentina e Chile. Desenvolveu o <strong style="color: #daa520;">Método DACE</strong> 
+                        e o <strong style="color: #daa520;">Sistema SNAP</strong> de gerenciamento de leads, ambos proprietários e focados 
+                        em conversão para o mercado imobiliário.
+                    </p>
+                </div>
+
+                <!-- Sobre a Agência -->
+                <div style="background: linear-gradient(135deg, rgba(8,77,110,0.6) 0%, rgba(0,0,0,0.9) 100%); padding: 45px; border-radius: 20px; border: 2px solid rgba(218,165,32,0.4);">
+                    <h3 style="color: #daa520; font-size: 26px; margin-bottom: 20px;">🌎 RedattoLAB • Equipe Internacional</h3>
+                    <p style="color: #ffffff; font-size: 17px; line-height: 1.8; margin-bottom: 20px;">
+                        Nasce da vontade de entregar resultados palpáveis, baseados em valores inegociáveis como transparência, honestidade e cultura data-driven. Trabalhamos exclusivamente com <strong style="color: #daa520;">especialistas plenos e seniores</strong> 
+                        com mais de 3 anos de atuação em marketing digital. Equipe internacional com profissionais do Brasil 
+                        e países da América Hispânica.
+                    </p>
+                    <p style="color: #ffffff; font-size: 17px; line-height: 1.8; margin-bottom: 25px;">
+                        <strong style="color: #daa520;">Por que equipe local?</strong> Acreditamos que know-how nos mercados atendidos 
+                        é muito mais eficiente do que "achar que funciona lá". Trabalhamos com profissionais que vivem e respiram 
+                        a realidade de cada país, garantindo estratégias totalmente adaptadas aos mercados locais.
+                    </p>
+                    <div style="background: rgba(218,165,32,0.1); padding: 25px; border-radius: 15px; border-left: 4px solid #daa520;">
+                        <p style="color: #daa520; font-weight: 700; font-size: 18px; margin-bottom: 10px;">🎯 Foco total em conversão</p>
+                        <p style="color: #ffffff; font-size: 16px; line-height: 1.7;">
+                            Utilizamos exclusivamente o <strong>Método DACE</strong> (metodologia proprietária de análise e otimização de campanhas) 
+                            e o <strong>Sistema SNAP</strong> (sistema de gerenciamento de leads que maximiza o aproveitamento do budget de midia) para garantir resultados acima da média 
+                            e previsíveis em todos os projetos.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- O QUE VEM NO KIT -->
+    <section class="value-stack-section" id="oferta">
+        <div class="container">
+            <h2 class="section-title">📦 O que você recebe no kit completo</h2>
+            
+            <div class="products-grid">
+                <!-- CARD 1 - E-book Principal -->
+                <div class="product-card">
+                    <div class="product-badge product-badge-main">
+                        📘 PRODUTO PRINCIPAL • R$ 47
+                    </div>
+                    <h3>E-book Tendências 2026</h3>
+                    <p>
+                        25 páginas com estratégias para Instagram, TikTok e YouTube Shorts. IA para conteúdo, funis automatizados e anúncios com ROI comprovado.
+                    </p>
+                </div>
+
+                <!-- CARD 2 - Kit 15 Prompts -->
+                <div class="product-card">
+                    <div class="product-badge">
+                        BÔNUS #1 • R$ 97
+                    </div>
+                    <h3>🤖 Kit Corretor Digital 2026</h3>
+                    <p>
+                        51 páginas com 15 prompts profissionais de IA. Copie, cole e gere descrições magnéticas, posts e roteiros em minutos.
+                    </p>
+                </div>
+
+                <!-- CARD 3 - Prompts Secretos -->
+                <div class="product-card">
+                    <div class="product-badge">
+                        BÔNUS #2 • R$ 27
+                    </div>
+                    <h3>💎 Guia Prompts Secretos</h3>
+                    <p>
+                        2 prompts de elite: Gerador de Ideias Infinito (9 ideias em 2 min) + Analisador de Performance com insights acionáveis.
+                    </p>
+                </div>
+
+                <!-- CARD 4 - Templates E-mail -->
+                <div class="product-card">
+                    <div class="product-badge">
+                        BÔNUS #3 • R$ 27
+                    </div>
+                    <h3>✉️ 3 Templates de E-mail</h3>
+                    <p>
+                        Taxa de abertura de até 71%. Scripts prontos: follow-up pós-visita, reativação de lead frio e última chamada com urgência.
+                    </p>
+                </div>
+
+                <!-- CARD 5 - Scripts WhatsApp -->
+                <div class="product-card">
+                    <div class="product-badge">
+                        BÔNUS #4 • R$ 37
+                    </div>
+                    <h3>💬 5 Scripts de WhatsApp</h3>
+                    <p>
+                        98% taxa de abertura e 45-60% de resposta. Para cada fase: primeiro contato, qualificação, agendamento, pós-visita e fechamento.
+                    </p>
+                </div>
+
+                <!-- CARD 6 - Toolkit Premium -->
+                <div class="product-card">
+                    <div class="product-badge">
+                        BÔNUS #5 • R$ 47
+                    </div>
+                    <h3>🛠️ Toolkit Premium</h3>
+                    <p>
+                        Checklists, templates Canva editáveis, 15+ ferramentas de IA testadas, CRM simplificado e trackers de métricas.
+                    </p>
+                </div>
+
+                <!-- CARD 7 - Guia IA -->
+                <div class="product-card">
+                    <div class="product-badge">
+                        BÔNUS #6 • R$ 47
+                    </div>
+                    <h3>🎓 Guia Rápido de IA</h3>
+                    <p>
+                        6 páginas práticas. Aprenda a usar as principais ferramentas de IA gratuitas com passo a passo simplificado.
+                    </p>
+                </div>
+
+                <!-- CARD 8 - Simulador -->
+                <div class="product-card">
+                    <div class="product-badge">
+                        BÔNUS #7 • R$ 97
+                    </div>
+                    <h3>📊 Simulador de Funil</h3>
+                    <p>
+                        Calcule seu potencial de leads e vendas. Elimina achismos e te mostra exatamente quantos leads precisa gerar.
+                    </p>
+                </div>
+
+                <!-- CARD 9 - Grupo VIP -->
+                <div class="product-card">
+                    <div class="product-badge">
+                        BÔNUS #8 • R$ 47
+                    </div>
+                    <h3>👥 Grupo VIP RedattoLAB</h3>
+                    <p>
+                        Comunidade exclusiva. Troque experiências, tire dúvidas rápidas e receba atualizações em primeira mão.
+                    </p>
+                </div>
+
+                <!-- CARD 10 - CONSULTORIA (DESTAQUE) -->
+                <div class="product-card consultoria-card">
+                    <div class="product-badge product-badge-main">
+                        🎁 BÔNUS SURPRESA PARA ESTA TURMA • R$ 497
+                    </div>
+                    <h3>🎯 Consultoria Estratégica 1 hora</h3>
+                    <p>
+                        Sessão individual com especialista da RedattoLAB. Após a compra, você agenda via WhatsApp. Preenchemos juntos um diagnóstico antes da sessão para aproveitar cada minuto. Você sai com plano de ação claro e insights práticos. Sem enrolação, só resultado. Disponível no kit somente para quem adquirir nas 72 horas de lançamento ou enquanto houverem vagas para a turma Estrategista. Após esse período, o bônus será retirado e o preço do kit aumentará.
+                    </p>
+                </div>
+            </div>
+
+            <!-- PREÇO -->
+            <div class="price-section">
+                <h3>💰 Investimento turma estrategista</h3>
+                
+                <div style="text-align: center; margin-top: 30px; padding: 30px; background: rgba(8,77,110,0.3); border-radius: 20px; border: 2px solid rgba(218,165,32,0.3);">
+                    <p style="font-size: 18px; color: rgba(255,255,255,0.7); margin-bottom: 10px;">
+                        Valor total dos 10 produtos:
+                    </p>
+                    
+                    <p class="total-value">R$ 970,00</p>
+                    
+                    <div style="background: rgba(218,165,32,0.2); display: inline-block; padding: 8px 20px; border-radius: 12px; border: 1px solid rgba(218,165,32,0.4); margin-bottom: 20px;">
+                        <span style="color: #daa520; font-size: 16px; font-weight: 700;">
+                            🔥 90% de desconto aplicado
+                        </span>
+                    </div>
+                </div>
+
+                <div class="final-price">R$ 97</div>
+                <div class="installment">ou 12x de R$ 10,03 no cartão</div>
+                <p style="font-size: 16px; color: #daa520; margin-top: 15px; font-weight: 700;">
+                    💡 Menos que 2 cafés por mês
+                </p>
+                
+                <a href="https://pay.hotmart.com/K102596943O" class="cta-button" style="margin-top: 30px;">Garantir minha vaga agora</a>
+
+                <div class="security-badges" style="margin-top: 25px; justify-content: center;">
+                    <div class="security-badge-item">
+                        <span>🔒</span> Ambiente 100% seguro
+                    </div>
+                    <div class="security-badge-item">
+                        <span>🛡️</span> Garantia de 7 dias
+                    </div>
+                    <div class="security-badge-item">
+                        <span>⚡</span> Acesso imediato
+                    </div>
+                </div>
+
+                <div class="guarantee-badge">
+                    🛡️ Garantia incondicional de 7 dias • Risco zero
+                </div>
+
+                <p style="font-size: 14px; color: rgba(255,255,255,0.7); margin-top: 30px;">
+                    Após 72h, preço sobe para R$ 197 e bônus da consultoria é removido
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARA QUEM É -->
+    <section style="padding: 80px 20px; background: rgba(0,0,0,0.6);">
+        <div class="container">
+            <h2 class="section-title">✅ Este kit é para você se...</h2>
+            
+            <div class="products-grid">
+                <div style="background: rgba(8,77,110,0.4); padding: 30px; border-radius: 20px; border: 2px solid rgba(218,165,32,0.3);">
+                    <h3 style="color: #daa520; font-size: 20px; margin-bottom: 15px;">✅ Corretor sério</h3>
+                    <p style="color: #ffffff; font-size: 16px; line-height: 1.7;">Quer sistema comprovado e está disposto a implementar (não busca fórmula mágica).</p>
+                </div>
+
+                <div style="background: rgba(8,77,110,0.4); padding: 30px; border-radius: 20px; border: 2px solid rgba(218,165,32,0.3);">
+                    <h3 style="color: #daa520; font-size: 20px; margin-bottom: 15px;">⏰ Sem tempo</h3>
+                    <p style="color: #ffffff; font-size: 16px; line-height: 1.7;">Precisa de ferramentas que economizam 10-15h/semana usando IA.</p>
+                </div>
+
+                <div style="background: rgba(8,77,110,0.4); padding: 30px; border-radius: 20px; border: 2px solid rgba(218,165,32,0.3);">
+                    <h3 style="color: #daa520; font-size: 20px; margin-bottom: 15px;">💰 ROI garantido</h3>
+                    <p style="color: #ffffff; font-size: 16px; line-height: 1.7;">Quer investimento que se paga na primeira venda (R$ 97 vs comissões de milhares).</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px; padding: 30px; background: rgba(218,165,32,0.1); border-radius: 20px; border: 2px solid rgba(218,165,32,0.4); max-width: 700px; margin-left: auto; margin-right: auto;">
+                <h3 style="color: #daa520; font-size: 24px; margin-bottom: 15px;">❌ NÃO é para você se...</h3>
+                <p style="color: #ffffff; font-size: 16px; line-height: 1.7;">Busca atalhos ou quer resultados sem implementar nada. Este é um sistema de trabalho inteligente, não mágica.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">❓ Perguntas frequentes</h2>
+            
+            <div class="faq-accordion">
+                <details class="faq-item">
+                    <summary>Não tenho tempo para postar todo dia. Isso vai funcionar pra mim?</summary>
+                    <div class="faq-answer">
+                        <p>Sim! O método mostra como criar conteúdo em lote usando IA. Você dedica 1 hora por semana e agenda tudo. Os prompts são feitos para quem não tem tempo a perder.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Não entendo nada de marketing digital. É muito técnico?</summary>
+                    <div class="faq-answer">
+                        <p>Não. Linguagem simples, passo a passo, sem jargões complicados. Se você sabe usar WhatsApp, consegue aplicar tudo que está no kit.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Já tentei marketing digital e não funcionou. Por que seria diferente?</summary>
+                    <div class="faq-answer">
+                        <p>Provavelmente faltou método. Este kit mostra o caminho completo testado em 5 países e usado por profissionais do ramo imobiliário. Não é teoria, é aplicação prática.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Preciso aparecer na câmera ou criar reels o tempo todo?</summary>
+                    <div class="faq-answer">
+                        <p>Não necessariamente. O kit ensina estratégias de conteúdo com e sem aparecer. Existem formatos que geram ótimos resultados sem você precisar gravar vídeos.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Como funciona a garantia?</summary>
+                    <div class="faq-answer">
+                        <p>7 dias incondicional. Se não agregar valor ao seu negócio, basta enviar um email e devolvemos 100% do investimento. Sem perguntas, sem burocracia.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Recebo o material na hora?</summary>
+                    <div class="faq-answer">
+                        <p>Sim! Assim que o pagamento for confirmado (em até 5 minutos), você recebe por email todos os e-books em PDF, bônus, templates, acesso ao grupo VIP e link para o simulador de funil.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section style="padding: 100px 20px; background: linear-gradient(135deg, rgba(218,165,32,0.2) 0%, rgba(8,77,110,0.4) 100%); text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 42px; color: #daa520; margin-bottom: 25px; font-family: 'Urbanist', sans-serif;">
+                🚀 Sua transformação começa agora
+            </h2>
+            <p style="font-size: 20px; color: #ffffff; margin-bottom: 40px; line-height: 1.6; max-width: 700px; margin-left: auto; margin-right: auto;">
+                Oferta encerra em 72h. Após esse prazo, preço sobe para R$ 197 e o bônus da consultoria é removido.
+            </p>
+            
+            <div class="countdown-container" style="max-width: 500px; margin-bottom: 40px;">
+                <span class="countdown-text">⏰ Última chance! Oferta encerra em:</span>
+                <span class="countdown-timer" id="countdown-final">71:59:00</span>
+            </div>
+
+            <a href="https://pay.hotmart.com/K102596943O" class="
